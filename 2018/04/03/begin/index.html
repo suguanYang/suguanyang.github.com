@@ -13,25 +13,24 @@
     
     
     
-    <title>react,props and state | blog | front-ends</title>
+    <title>react props and state | blog | front-ends</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="react">
-    <meta name="description" content="react基础">
-<meta name="keywords" content="react">
+    <meta name="keywords" content="">
+    <meta name="description" content="组件和props 组件让你按需分割界面，可重用的块，思考将这些快分割； 组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素 这个简单的方式定义了一个组件，使用js的函数function Welcome(props) {  return Hello, {props.name};}这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="react,props and state">
-<meta property="og:url" content="http://www.ylioo.com/2018/04/02/react/begin/index.html">
+<meta property="og:title" content="react props and state">
+<meta property="og:url" content="http://www.ylioo.com/2018/04/03/begin/index.html">
 <meta property="og:site_name" content="blog">
-<meta property="og:description" content="react基础">
+<meta property="og:description" content="组件和props 组件让你按需分割界面，可重用的块，思考将这些快分割； 组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素 这个简单的方式定义了一个组件，使用js的函数function Welcome(props) {  return Hello, {props.name};}这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-03T09:54:59.904Z">
+<meta property="og:updated_time" content="2018-04-03T12:23:56.367Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="react,props and state">
-<meta name="twitter:description" content="react基础">
+<meta name="twitter:title" content="react props and state">
+<meta name="twitter:description" content="组件和props 组件让你按需分割界面，可重用的块，思考将这些快分割； 组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素 这个简单的方式定义了一个组件，使用js的函数function Welcome(props) {  return Hello, {props.name};}这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的">
     
         <link rel="alternate" type="application/atom+xml" title="blog" href="/atom.xml">
     
@@ -112,7 +111,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">react,props and state</div>
+        <div class="flex-col header-title ellipsis">react props and state</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -134,15 +133,13 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">react,props and state</h1>
+        <h1 class="title">react props and state</h1>
         <h5 class="subtitle">
             
-                <time datetime="2018-04-02T15:27:54.978Z" itemprop="datePublished" class="page-time">
-  2018-04-02
+                <time datetime="2018-04-03T12:17:32.854Z" itemprop="datePublished" class="page-time">
+  2018-04-03
 </time>
 
-
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/react/">react</a></li></ul>
 
             
         </h5>
@@ -164,17 +161,15 @@
     </aside>
 
 
-<article id="post-react/begin"
+<article id="post-begin"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">react,props and state</h1>
+        <h1 class="post-card-title">react props and state</h1>
         <div class="post-meta">
-            <time class="post-time" title="2018-04-02 23:27:54" datetime="2018-04-02T15:27:54.978Z"  itemprop="datePublished">2018-04-02</time>
+            <time class="post-time" title="2018-04-03 20:17:32" datetime="2018-04-03T12:17:32.854Z"  itemprop="datePublished">2018-04-03</time>
 
             
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/react/">react</a></li></ul>
-
 
 
             
@@ -188,11 +183,11 @@
             <p>组件和props</p>
 <p>组件让你按需分割界面，可重用的块，思考将这些快分割；</p>
 <p>组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素</p>
-<p>这个简单的方式定义了一个组件，使用js的函数<br>    function Welcome(props) {<br>      return </p><h1>Hello, {props.name}</h1>;<br>    }<br>这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的properties）数据对象参数并且返回一个react元素。<br>我们称这样的组件为functional，因为他是字面上的js函数？<p></p>
+<p>这个简单的方式定义了一个组件，使用js的函数<br>function Welcome(props) {<br>  return </p><h1>Hello, {props.name}</h1>;<br>}<br>这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的properties）数据对象参数并且返回一个react元素。<br>我们称这样的组件为functional，因为他是字面上的js函数？<p></p>
 <p><strong>渲染组件</strong></p>
 <p>我们可以定义一个react元素代表传统的标签</p>
-<p>const ele = <div>;</div></p>
-<p>元素也可以代表用户自定义的组件</p>
+<pre><code>const ele = &lt;div /&gt;;
+</code></pre><p>元素也可以代表用户自定义的组件</p>
 <p>当react看见一个代表用户自定义组件的元素时，它会传入JSX属性到这个组件作为一个单一的对象，我们成这样的对象为props</p>
 <pre><code>function Welcome(props) {
   return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
@@ -227,12 +222,8 @@ function App() {
 &lt;/div&gt;
   );
 }
-
-ReactDOM.render(
-  &lt;App /&gt;,
-  document.getElementById(&apos;root&apos;)
-);
-</code></pre><p>Extracting Components<br>Don’t be afraid to split components into smaller components.</p>
+</code></pre><p>ReactDOM.render(<br>  <app>,<br>  document.getElementById(‘root’)<br>);</app></p>
+<p>Extracting Components<br>Don’t be afraid to split components into smaller components.</p>
 <p>For example, consider this Comment component:</p>
 <pre><code>function Comment(props) {
   return (
@@ -295,9 +286,8 @@ element,
 document.getElementById(&apos;root&apos;)
   );
 }
-
-setInterval(tick, 1000);
-</code></pre><p>在这一章中，我们将会学习如何制作一个时钟组件，他是复用的而且封装性的，它会建立自己的计数器且每秒都会更新</p>
+</code></pre><p>setInterval(tick, 1000);</p>
+<p>在这一章中，我们将会学习如何制作一个时钟组件，他是复用的而且封装性的，它会建立自己的计数器且每秒都会更新</p>
 <p>我们先封装一下他是什么样的</p>
 <pre><code>function Clock(props) {
   return (
@@ -352,10 +342,9 @@ return (
 }
 </code></pre><p>注意我们是如何传入props到父构造器中的</p>
 <p>类组件应该总是向父组件传入props</p>
-<p>在<clock>元素中移除移除dete props<br>    ReactDOM.render(<br>      <clock>,<br>      document.getElementById(‘root’)<br>    );</clock></clock></p>
-<pre><code>The result looks like this:
-
-class Clock extends React.Component {
+<p>在<clock>元素中移除移除dete props<br>ReactDOM.render(<br>  <clock>,<br>  document.getElementById(‘root’)<br>);</clock></clock></p>
+<p>The result looks like this:</p>
+<pre><code>class Clock extends React.Component {
   constructor(props) {
 super(props);
 this.state = {date: new Date()};
@@ -457,7 +446,6 @@ ReactDOM.render(
 </code></pre><p>现在它能够正常工作了</p>
 <p>让我们简单总结一下是怎么回事并排序事件的触发顺序</p>
 <p>1，当<clock>组件被传入ReactDOM.render()时，react触发了Clock组件的构造函数，自从Clock需要显示当前事件，他使用一个包含时间的对象初始化this.state，我们将会在接下来更新他。<br>2，接着react使用了组件的render函数，这让react了解到那些数据应该在屏幕上显示，react下一步会匹配render的输出更新dom<br>3，当Clock的输出被内嵌到dom中，react触发componentDidMount函数，再此函数中Clock要求浏览器建立一个计时器每秒呼叫组件的tick方法<br>4，浏览器每秒呼叫tick函数，在函数中Clock计划使用setState改变当前时间去更新视图，感谢setState，react才能知道state被改变，接着使用render函数去更新那些应该在屏幕上显示的数据，这时，this.state.date将会不同于render函数中的数据，所以render函数的输出将会更新时间。<br>5，如果组件一旦从dom中移除，react将会运行componentWillUnmount函数，所以这个计时器也被停止</clock></p>
-<p>事件处理</p>
 
         </div>
 
@@ -466,7 +454,7 @@ ReactDOM.render(
     <div class="content">
         
 <span class="post-time">
-    post.last_updated<time datetime="2018-04-03T09:54:59.904Z" itemprop="dateUpdated">2018-04-03 17:54:59</time>
+    post.last_updated<time datetime="2018-04-03T12:23:56.367Z" itemprop="dateUpdated">2018-04-03 20:23:56</time>
 </span><br>
 
 
@@ -488,8 +476,6 @@ ReactDOM.render(
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react/">react</a></li></ul>
-
 
             
 <div class="page-share-wrap">
@@ -498,7 +484,7 @@ ReactDOM.render(
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ylioo.com/2018/04/02/react/begin/&title=《react,props and state》 — blog&pic=http://www.ylioo.com/img/donnie.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ylioo.com/2018/04/03/begin/&title=《react props and state》 — blog&pic=http://www.ylioo.com/img/donnie.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -508,22 +494,22 @@ ReactDOM.render(
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ylioo.com/2018/04/02/react/begin/&title=《react,props and state》 — blog&source=personal-website" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ylioo.com/2018/04/03/begin/&title=《react props and state》 — blog&source=personal-website" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ylioo.com/2018/04/02/react/begin/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ylioo.com/2018/04/03/begin/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《react,props and state》 — blog&url=http://www.ylioo.com/2018/04/02/react/begin/&via=http://www.ylioo.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《react props and state》 — blog&url=http://www.ylioo.com/2018/04/03/begin/&via=http://www.ylioo.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ylioo.com/2018/04/02/react/begin/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ylioo.com/2018/04/03/begin/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -608,7 +594,7 @@ ReactDOM.render(
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ylioo.com/2018/04/02/react/begin/&title=《react,props and state》 — blog&pic=http://www.ylioo.com/img/donnie.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ylioo.com/2018/04/03/begin/&title=《react props and state》 — blog&pic=http://www.ylioo.com/img/donnie.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -618,22 +604,22 @@ ReactDOM.render(
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ylioo.com/2018/04/02/react/begin/&title=《react,props and state》 — blog&source=personal-website" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ylioo.com/2018/04/03/begin/&title=《react props and state》 — blog&source=personal-website" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ylioo.com/2018/04/02/react/begin/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ylioo.com/2018/04/03/begin/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《react,props and state》 — blog&url=http://www.ylioo.com/2018/04/02/react/begin/&via=http://www.ylioo.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《react props and state》 — blog&url=http://www.ylioo.com/2018/04/03/begin/&via=http://www.ylioo.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ylioo.com/2018/04/02/react/begin/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ylioo.com/2018/04/03/begin/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -644,7 +630,7 @@ ReactDOM.render(
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://www.ylioo.com/2018/04/02/react/begin/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://www.ylioo.com/2018/04/03/begin/" alt="微信分享二维码">
 </div>
 
 
