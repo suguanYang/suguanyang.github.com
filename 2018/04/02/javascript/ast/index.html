@@ -20,17 +20,19 @@
     
     
     <meta name="keywords" content="">
-    <meta name="description" content="进入 vim：    vim  insert:    输入: i save and exit:    if you are in insert mode,first click “esc”,then input “:wq”    (w: write;    q: quit;)    end input “enter” other ways: input &amp;quot;x: ( = wq);">
+    <meta name="description" content="The AST(abstract syntax tree)(http://blog.csdn.net/dear_mr/article/details/72587908)Def:  In computer science, an abstract syntax tree(AST), ro just syntax tree, is a tree representation of the abstra">
 <meta property="og:type" content="article">
 <meta property="og:title" content="No title">
-<meta property="og:url" content="http://www.ylioo.com/2018/04/02/linux/vim/index.html">
+<meta property="og:url" content="http://www.ylioo.com/2018/04/02/javascript/ast/index.html">
 <meta property="og:site_name" content="blog">
-<meta property="og:description" content="进入 vim：    vim  insert:    输入: i save and exit:    if you are in insert mode,first click “esc”,then input “:wq”    (w: write;    q: quit;)    end input “enter” other ways: input &amp;quot;x: ( = wq);">
+<meta property="og:description" content="The AST(abstract syntax tree)(http://blog.csdn.net/dear_mr/article/details/72587908)Def:  In computer science, an abstract syntax tree(AST), ro just syntax tree, is a tree representation of the abstra">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-24T07:50:12.461Z">
+<meta property="og:image" content="https://i.imgur.com/cuTaRSW.png">
+<meta property="og:updated_time" content="2018-04-03T08:37:01.379Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="No title">
-<meta name="twitter:description" content="进入 vim：    vim  insert:    输入: i save and exit:    if you are in insert mode,first click “esc”,then input “:wq”    (w: write;    q: quit;)    end input “enter” other ways: input &amp;quot;x: ( = wq);">
+<meta name="twitter:description" content="The AST(abstract syntax tree)(http://blog.csdn.net/dear_mr/article/details/72587908)Def:  In computer science, an abstract syntax tree(AST), ro just syntax tree, is a tree representation of the abstra">
+<meta name="twitter:image" content="https://i.imgur.com/cuTaRSW.png">
     
         <link rel="alternate" type="application/atom+xml" title="blog" href="/atom.xml">
     
@@ -136,7 +138,7 @@
         <h1 class="title"></h1>
         <h5 class="subtitle">
             
-                <time datetime="2018-04-02T15:27:54.624Z" itemprop="datePublished" class="page-time">
+                <time datetime="2018-04-02T15:27:54.562Z" itemprop="datePublished" class="page-time">
   2018-04-02
 </time>
 
@@ -153,14 +155,21 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.</span> <span class="post-toc-text">The AST(abstract syntax tree)</span></a></li></ol>
+        </nav>
+    </aside>
 
-<article id="post-linux/vim"
+
+<article id="post-javascript/ast"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
         <h1 class="post-card-title"></h1>
         <div class="post-meta">
-            <time class="post-time" title="2018-04-02 23:27:54" datetime="2018-04-02T15:27:54.624Z"  itemprop="datePublished">2018-04-02</time>
+            <time class="post-time" title="2018-04-02 23:27:54" datetime="2018-04-02T15:27:54.562Z"  itemprop="datePublished">2018-04-02</time>
 
             
 
@@ -173,14 +182,95 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>进入 vim：<br>    vim <filename></filename></p>
-<p>insert:<br>    输入: i</p>
-<p>save and exit:<br>    if you are in insert mode,first click “esc”,then input “:wq”<br>    (w: write;<br>    q: quit;)<br>    end input “enter”</p>
-<pre><code>other ways: input &quot;x: ( = wq);
-            click &quot;shift + zz&quot;
-</code></pre><p>watch only:<br>    cat <filename></filename></p>
-<p>normal quit:<br>    前提是没有改变过内容<br>    first click “esc”,then input “:q”</p>
-<p>quit without save:<br>    first click “esc”,then input “:q!”</p>
+            <p></p><h1>The AST(abstract syntax tree)</h1><br>(<a href="http://blog.csdn.net/dear_mr/article/details/72587908" target="_blank" rel="noopener">http://blog.csdn.net/dear_mr/article/details/72587908</a>)<p></p><br><strong>Def:</strong><br><p></p>
+<blockquote>
+<p>In computer science, an abstract syntax tree(AST), ro just syntax tree, is a tree representation of the abstract syntactic structure of source code written in a programming language. </p>
+</blockquote>
+<p><strong>Translation:</strong><br><br>    在计算机科学中，抽象语法树，或者语法树，时源代码的抽象语法结构的树状代表形式，这里特指编程语言的源代码。</p>
+<hr>
+<p><em>Javascript</em>的语法是为了给开发者更好的编程而设计，但是不适合程序的理解。所以需要转化为SAT来更适合程序的分析，浏览器编译器一般会把源代码转化为AST来进一步的分析等其他操作。</p>
+<p>以下只介绍<em>javascript</em>相关的抽象语法树</p>
+<pre><code>var a = 3;
+a + 5
+</code></pre><p>那么它的抽象语法树就类似：</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://i.imgur.com/cuTaRSW.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p><strong><em>Javascript Parse</em></strong></p>
+<p><em>javascript parse</em>, 把<em>js</em>源码转化为抽象语法树的解析器。<br></p>
+<p>浏览器会把<em>js</em>源码通过解析器转化为抽象语法树，在进一步转化为字节码或直接生成机器码。<br></p>
+<p>一般来说每个<em>js</em>引擎都会有自己的抽象语法树格式，<em>Chrome</em>的V8引擎,<em>firefox</em>的<em>spidermonkey</em>，<strong>MDN</strong>提供了详细的 <em>spidermonkey AST format</em> 的详细说明。<br></p>
+<p>发展到现在可能不同的<em>JavaScript Parser</em>的AST格式会不同，或基于<em>SpiderMonkey AST format</em>，或重新设计自己的<em>AST format</em>，或基于<em>SpiderMonkey AST format</em>优化改进。通过优化抽象语法树，来使程序运行的更快，也是一种提高效率的方法。<br></p>
+<ul>
+<li>常用的JavaScript Parser有：</li>
+<li>Esprima</li>
+<li>UglifyJS2</li>
+<li>Traceur</li>
+<li>Acorn</li>
+<li>Shift</li>
+</ul>
+<p><br></p>
+<p><strong>生成并使用抽象语法树</strong><br>通过 esprima , 把一个名字为ast的空函数的源码生成一颗AST树：</p>
+<pre><code>var esprima = require(&apos;esprima&apos;);
+var code = &apos;function ast(){}&apos;;
+var ast = esprima.parse(code);
+</code></pre><p>生成的抽象语法树长这样：</p>
+<pre><code>{
+  &quot;type&quot;: &quot;Program&quot;,
+  &quot;body&quot;: [{
+  &quot;type&quot;: &quot;FunctionDeclaration&quot;,
+  &quot;id&quot;: {
+    &quot;type&quot;: &quot;Identifier&quot;,
+    &quot;name&quot;: &quot;ast&quot;,
+    &quot;range&quot;: [
+      9,
+      12
+    ]
+  },
+  &quot;params&quot;: [],
+  &quot;body&quot;: {
+    &quot;type&quot;: &quot;BlockStatement&quot;,
+    &quot;body&quot;: [],
+    &quot;range&quot;: [
+      14,
+      16
+    ]
+  },
+  &quot;generator&quot;: false,
+  &quot;expression&quot;: false,
+  &quot;range&quot;: [
+    0,
+    16
+  ]
+}
+  ],
+  &quot;sourceType&quot;: &quot;module&quot;,
+  &quot;range&quot;: [
+0,
+16
+  ]
+}
+</code></pre><p>通过 estraverse 遍历并且更新抽象语法树，把函数名称改为ast_awsome：</p>
+<pre><code>...
+var estraverse = require(&apos;estraverse&apos;);
+estraverse.traverse(ast, {
+    enter: function (node) {
+        node.name += &quot;_awsome&quot;;
+    }
+});
+</code></pre><p>通过 escodegen 将AST重新生成为源码：</p>
+<pre><code>...
+var escodegen = require(&quot;escodegen&quot;);
+var regenerated_code = escodegen.parse(ast)
+</code></pre><p><strong>AST三板斧：</strong></p>
+<p>通过 esprima 把源码转化为AST<br>通过 estraverse 遍历并更新AST<br>通过 escodegen 将AST重新生成源码<br>抽象语法树的用途<br>浏览器最先就会把源码解析为抽象语法树，对浏览器而言AST的作用非常重要。</p>
+<p>对开发者而言，AST的作用就是可以精准的定位到代码的任何地方，它就像是是你的手术刀，对代码进行一系列的操作。</p>
+<p>常见的几种用途：</p>
+<p>代码语法的检查、代码风格的检查、代码的格式化、代码的高亮、代码错误提示、代码自动补全等等<br>如JSLint、JSHint对代码错误或风格的检查，发现一些潜在的错误<br>IDE的错误提示、格式化、高亮、自动补全等等<br>代码混淆压缩<br>UglifyJS2等<br>优化变更代码，改变代码结构使达到想要的结构<br>代码打包工具webpack、rollup等等<br>CommonJS、AMD、CMD、UMD等代码规范之间的转化<br>CoffeeScript、TypeScript、JSX等转化为原生Javascript</p>
 
         </div>
 
@@ -189,7 +279,7 @@
     <div class="content">
         
 <span class="post-time">
-    post.last_updated<time datetime="2018-03-24T07:50:12.461Z" itemprop="dateUpdated">2018-03-24 15:50:12</time>
+    post.last_updated<time datetime="2018-04-03T08:37:01.379Z" itemprop="dateUpdated">2018-04-03 16:37:01</time>
 </span><br>
 
 
@@ -219,7 +309,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ylioo.com/2018/04/02/linux/vim/&title=blog&pic=http://www.ylioo.com/img/donnie.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ylioo.com/2018/04/02/javascript/ast/&title=blog&pic=http://www.ylioo.com/img/donnie.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -229,22 +319,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ylioo.com/2018/04/02/linux/vim/&title=blog&source=personal-website" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ylioo.com/2018/04/02/javascript/ast/&title=blog&source=personal-website" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ylioo.com/2018/04/02/linux/vim/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ylioo.com/2018/04/02/javascript/ast/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=blog&url=http://www.ylioo.com/2018/04/02/linux/vim/&via=http://www.ylioo.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=blog&url=http://www.ylioo.com/2018/04/02/javascript/ast/&via=http://www.ylioo.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ylioo.com/2018/04/02/linux/vim/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ylioo.com/2018/04/02/javascript/ast/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -267,7 +357,7 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2018/04/02/math/微分方程/" id="post-prev" class="post-nav-link">
+      <a href="/2018/04/02/linux/vim/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
         <h4 class="title">[no title]</h4>
       </a>
@@ -276,7 +366,7 @@
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2018/04/02/javascript/ast/" id="post-next" class="post-nav-link">
+      <a href="/2018/04/02/GO/variable/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
         <h4 class="title">[no title]</h4>
       </a>
@@ -349,7 +439,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ylioo.com/2018/04/02/linux/vim/&title=《No title》 — blog&pic=http://www.ylioo.com/img/donnie.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ylioo.com/2018/04/02/javascript/ast/&title=《No title》 — blog&pic=http://www.ylioo.com/img/donnie.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -359,22 +449,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ylioo.com/2018/04/02/linux/vim/&title=《No title》 — blog&source=personal-website" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ylioo.com/2018/04/02/javascript/ast/&title=《No title》 — blog&source=personal-website" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ylioo.com/2018/04/02/linux/vim/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ylioo.com/2018/04/02/javascript/ast/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — blog&url=http://www.ylioo.com/2018/04/02/linux/vim/&via=http://www.ylioo.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — blog&url=http://www.ylioo.com/2018/04/02/javascript/ast/&via=http://www.ylioo.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ylioo.com/2018/04/02/linux/vim/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ylioo.com/2018/04/02/javascript/ast/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -385,7 +475,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://www.ylioo.com/2018/04/02/linux/vim/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://www.ylioo.com/2018/04/02/javascript/ast/" alt="微信分享二维码">
 </div>
 
 

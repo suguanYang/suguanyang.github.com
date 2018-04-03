@@ -400,6 +400,27 @@
   
   <entry>
     <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/javascript/ast/"/>
+    <id>http://www.ylioo.com/2018/04/02/javascript/ast/</id>
+    <published>2018-04-02T15:27:54.562Z</published>
+    <updated>2018-04-03T08:37:01.379Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><h1>The AST(abstract syntax tree)</h1><br>(<a href="http://blog.csdn.net/dear_mr/article/details/72587908" target="_blank" rel="noopener">http://blog.csdn.net/dear_mr/article/details/72587908</a>)<p></p><br><strong>Def:</strong><br><p></p><blockquote><p>In computer science, an abstract syntax tree(AST), ro just syntax tree, is a tree representation of the abstract syntactic structure of source code written in a programming language. </p></blockquote><p><strong>Translation:</strong><br><br>    在计算机科学中，抽象语法树，或者语法树，时源代码的抽象语法结构的树状代表形式，这里特指编程语言的源代码。</p><hr><p><em>Javascript</em>的语法是为了给开发者更好的编程而设计，但是不适合程序的理解。所以需要转化为SAT来更适合程序的分析，浏览器编译器一般会把源代码转化为AST来进一步的分析等其他操作。</p><p>以下只介绍<em>javascript</em>相关的抽象语法树</p><pre><code>var a = 3;a + 5</code></pre><p>那么它的抽象语法树就类似：</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.imgur.com/cuTaRSW.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><p><strong><em>Javascript Parse</em></strong></p><p><em>javascript parse</em>, 把<em>js</em>源码转化为抽象语法树的解析器。<br></p><p>浏览器会把<em>js</em>源码通过解析器转化为抽象语法树，在进一步转化为字节码或直接生成机器码。<br></p><p>一般来说每个<em>js</em>引擎都会有自己的抽象语法树格式，<em>Chrome</em>的V8引擎,<em>firefox</em>的<em>spidermonkey</em>，<strong>MDN</strong>提供了详细的 <em>spidermonkey AST format</em> 的详细说明。<br></p><p>发展到现在可能不同的<em>JavaScript Parser</em>的AST格式会不同，或基于<em>SpiderMonkey AST format</em>，或重新设计自己的<em>AST format</em>，或基于<em>SpiderMonkey AST format</em>优化改进。通过优化抽象语法树，来使程序运行的更快，也是一种提高效率的方法。<br></p><ul><li>常用的JavaScript Parser有：</li><li>Esprima</li><li>UglifyJS2</li><li>Traceur</li><li>Acorn</li><li>Shift</li></ul><p><br></p><p><strong>生成并使用抽象语法树</strong><br>通过 esprima , 把一个名字为ast的空函数的源码生成一颗AST树：</p><pre><code>var esprima = require(&apos;esprima&apos;);var code = &apos;function ast(){}&apos;;var ast = esprima.parse(code);</code></pre><p>生成的抽象语法树长这样：</p><pre><code>{  &quot;type&quot;: &quot;Program&quot;,  &quot;body&quot;: [{  &quot;type&quot;: &quot;FunctionDeclaration&quot;,  &quot;id&quot;: {    &quot;type&quot;: &quot;Identifier&quot;,    &quot;name&quot;: &quot;ast&quot;,    &quot;range&quot;: [      9,      12    ]  },  &quot;params&quot;: [],  &quot;body&quot;: {    &quot;type&quot;: &quot;BlockStatement&quot;,    &quot;body&quot;: [],    &quot;range&quot;: [      14,      16    ]  },  &quot;generator&quot;: false,  &quot;expression&quot;: false,  &quot;range&quot;: [    0,    16  ]}  ],  &quot;sourceType&quot;: &quot;module&quot;,  &quot;range&quot;: [0,16  ]}</code></pre><p>通过 estraverse 遍历并且更新抽象语法树，把函数名称改为ast_awsome：</p><pre><code>...var estraverse = require(&apos;estraverse&apos;);estraverse.traverse(ast, {    enter: function (node) {        node.name += &quot;_awsome&quot;;    }});</code></pre><p>通过 escodegen 将AST重新生成为源码：</p><pre><code>...var escodegen = require(&quot;escodegen&quot;);var regenerated_code = escodegen.parse(ast)</code></pre><p><strong>AST三板斧：</strong></p><p>通过 esprima 把源码转化为AST<br>通过 estraverse 遍历并更新AST<br>通过 escodegen 将AST重新生成源码<br>抽象语法树的用途<br>浏览器最先就会把源码解析为抽象语法树，对浏览器而言AST的作用非常重要。</p><p>对开发者而言，AST的作用就是可以精准的定位到代码的任何地方，它就像是是你的手术刀，对代码进行一系列的操作。</p><p>常见的几种用途：</p><p>代码语法的检查、代码风格的检查、代码的格式化、代码的高亮、代码错误提示、代码自动补全等等<br>如JSLint、JSHint对代码错误或风格的检查，发现一些潜在的错误<br>IDE的错误提示、格式化、高亮、自动补全等等<br>代码混淆压缩<br>UglifyJS2等<br>优化变更代码，改变代码结构使达到想要的结构<br>代码打包工具webpack、rollup等等<br>CommonJS、AMD、CMD、UMD等代码规范之间的转化<br>CoffeeScript、TypeScript、JSX等转化为原生Javascript</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;h1&gt;The AST(abstract syntax tree)&lt;/h1&gt;&lt;br&gt;(&lt;a href=&quot;http://blog.csdn.net/dear_mr/article/details/72587908&quot; target=&quot;_blank&quot; rel=&quot;noope
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="http://www.ylioo.com/2018/04/02/GO/variable/"/>
     <id>http://www.ylioo.com/2018/04/02/GO/variable/</id>
     <published>2018-04-02T15:27:54.547Z</published>
