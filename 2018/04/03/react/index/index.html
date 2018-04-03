@@ -6,15 +6,15 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>blog</title>
+  <title>react | blog</title>
   <meta name="author" content="suguanyang">
   
-  <meta name="description" content="personal-website">
+  <meta name="description" content="react.">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="react"/>
   <meta property="og:site_name" content="blog"/>
 
   
@@ -90,46 +90,33 @@
 
   <div class="container">
   	<div class="content">
-    	 <div class="page-header logo">
-  <h1>front-ends<span class="blink-fast">∎</span></h1>
-</div>
+    	 
 
-<div class="row page">
 
 	
+		<div class="page-header">
+			<h1> react</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
 	<div class="col-md-9">
 	
 
-		<div class="slogan">
-      <i class="fa fa-heart blink-slow"></i>
-      Yet another bootstrap theme.
-</div>    
-		<div id="top_search"></div>
-		<div class="mypage">
-		
-		<!-- title and entry -->
-		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2018/04/03/react/index/" title="react.">react</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2018-04-03  </div>
-		</div>
-	</div>
-	
+	<!-- content -->
+	<div class="mypage">		
+	  
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> react.
+		 </div> <!-- alert -->
+	  		
 
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>组件和props</p>
+	  <p>组件和props</p>
 <p>组件让你按需分割界面，可重用的块，思考将这些快分割；</p>
 <p>组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素</p>
 <p>这个简单的方式定义了一个组件，使用js的函数<br>function Welcome(props) {<br>  return </p><h1>Hello, {props.name}</h1>;<br>}<br>这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的properties）数据对象参数并且返回一个react元素。<br>我们称这样的组件为functional，因为他是字面上的js函数？<p></p>
@@ -395,102 +382,89 @@ ReactDOM.render(
 </code></pre><p>现在它能够正常工作了</p>
 <p>让我们简单总结一下是怎么回事并排序事件的触发顺序</p>
 <p>1，当<clock>组件被传入ReactDOM.render()时，react触发了Clock组件的构造函数，自从Clock需要显示当前事件，他使用一个包含时间的对象初始化this.state，我们将会在接下来更新他。<br>2，接着react使用了组件的render函数，这让react了解到那些数据应该在屏幕上显示，react下一步会匹配render的输出更新dom<br>3，当Clock的输出被内嵌到dom中，react触发componentDidMount函数，再此函数中Clock要求浏览器建立一个计时器每秒呼叫组件的tick方法<br>4，浏览器每秒呼叫tick函数，在函数中Clock计划使用setState改变当前时间去更新视图，感谢setState，react才能知道state被改变，接着使用render函数去更新那些应该在屏幕上显示的数据，这时，this.state.date将会不同于render函数中的数据，所以render函数的输出将会更新时间。<br>5，如果组件一旦从dom中移除，react将会运行componentWillUnmount函数，所以这个计时器也被停止</clock></p>
-
-	
-	</div>
-  <a type="button" href="/2018/04/03/react/index/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-
-		</div>
-
-		<!-- pagination -->
-		<div>
-  		<center>
-		<div class="pagination">
-
-   
-</div>
-
-  		</center>
-		</div>
-
-		
-		
-	</div> <!-- col-md-9 -->
-
-	
-		<div class="col-md-3">
-	<div id="sidebar">
-	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
-  </div>
-
-
-		
-			
-	<div class="widget">
-		<h4>Categories</h4>
-		<ul class="tag_box inline list-unstyled">
-		
-			<li><a href="/categories/react/">react<span>1</span></a></li>
-		
-		</ul>
+	  
 	</div>
 
-		
-			
-	<div class="widget">
-		<h4>Tag Cloud</h4>
-		<ul class="tag_box inline list-unstyled">		
-		
-			<li><a href="/tags/react/">react<span>1</span></a></li>
-		
-		 
-		</ul>
-	</div>
+	<div>
+  	<center>
+	<div class="pagination">
 
-
-		
-			
-<div class="widget">
-  <h4>Recent Posts</h4>
-  <ul class="entry list-unstyled">
     
-      <li>
-        <a href="/2018/04/03/react/index/"  title="react." ><i class="fa fa-file-o"></i>react</a>
-      </li>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
     
-  </ul>
-</div>
+</section>
 
+
+	</div> <!-- col-md-9/col-md-12 -->
 		
-			
-<div class="widget">
-	<h4>Links</h4>
-	<ul class="blogroll list-unstyled">
 	
-		<li><i class="fa fa-github"></i><a href="http://www.github.com/blackshow" title="My Github account." target="_blank"]);">My Github</a></li>
-	
-		<li><i class="fa fa-linkedin"></i><a href="http://www.linkedin.com/in/blackshow" title="My Linkin account." target="_blank"]);">My LinkedIn</a></li>
-	
-	</ul>
-</div>
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
 
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2018-04-03 
+	</div>
+	
 
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/react/">react<span>1</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/react/">react<span>1</span></a></li>
+    </ul>
+	</div>
 		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
 
+	<!-- toc -->
+	<div class="meta-widget">
 	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+		   <span class="toc-title">Contents</span>
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#undefined"><span class="toc-article-text">Hello, {props.name}</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#undefined"><span class="toc-article-text">Hello, Sara</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#undefined"><span class="toc-article-text">Hello Sara</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#undefined"><span class="toc-article-text">Hello Sara</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#undefined"><span class="toc-article-text">Hello, world!</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#undefined"><span class="toc-article-text">It is {this.state.date.toLocaleTimeString()}.</span></a></li></ol></li></ol>
+		</div>
 	
-</div> <!-- row-fluid -->
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
 	</div>
   </div>
   <div class="container-narrow">
