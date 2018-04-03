@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>No title | blog | front-ends</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="组件和props 组件让你按需分割界面，可重用的块，思考将这些快分割； 组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素 这个简单的方式定义了一个组件，使用js的函数function Welcome(props) {  return Hello, {props.name};}这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="No title">
+<meta property="og:url" content="http://www.ylioo.com/2018/04/02/react/begin/index.html">
+<meta property="og:site_name" content="blog">
+<meta property="og:description" content="组件和props 组件让你按需分割界面，可重用的块，思考将这些快分割； 组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素 这个简单的方式定义了一个组件，使用js的函数function Welcome(props) {  return Hello, {props.name};}这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.ylioo.com/2018/04/02/react/begin/%7Bprops.author.avatarUrl%7D">
+<meta property="og:image" content="http://www.ylioo.com/2018/04/02/react/begin/%7Bprops.user.avatarUrl%7D">
+<meta property="og:updated_time" content="2018-03-27T15:30:07.212Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="No title">
+<meta name="twitter:description" content="组件和props 组件让你按需分割界面，可重用的块，思考将这些快分割； 组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素 这个简单的方式定义了一个组件，使用js的函数function Welcome(props) {  return Hello, {props.name};}这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的">
+<meta name="twitter:image" content="http://www.ylioo.com/2018/04/02/react/begin/%7Bprops.author.avatarUrl%7D">
+    
+        <link rel="alternate" type="application/atom+xml" title="blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/PHYSICS.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/donnie.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">suguanyang</h5>
+          <a href="mailto:suguanyang@outlook.com" title="suguanyang@outlook.com" class="mail">suguanyang@outlook.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/yscoder" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/ysweb" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis"></div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="global.search_input_hint">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title"></h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-04-02T15:27:54.978Z" itemprop="datePublished" class="page-time">
+  2018-04-02
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">1.</span> <span class="post-toc-text">Hello, {props.name}</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">2.</span> <span class="post-toc-text">Hello, {props.name}</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">3.</span> <span class="post-toc-text">Hello, Sara</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">4.</span> <span class="post-toc-text">Hello Sara</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">5.</span> <span class="post-toc-text">Hello Sara</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">6.</span> <span class="post-toc-text">Hello, {props.name}</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">7.</span> <span class="post-toc-text">Hello, world!</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">7.1.</span> <span class="post-toc-text">It is {new Date().toLocaleTimeString()}.</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">8.</span> <span class="post-toc-text">Hello, world!</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">8.1.</span> <span class="post-toc-text">It is {props.date.toLocaleTimeString()}.</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">9.</span> <span class="post-toc-text">Hello, world!</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">9.1.</span> <span class="post-toc-text">It is {this.props.date.toLocaleTimeString()}.</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">10.</span> <span class="post-toc-text">Hello, world!</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">10.1.</span> <span class="post-toc-text">It is {this.state.date.toLocaleTimeString()}.</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">11.</span> <span class="post-toc-text">Hello, world!</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">11.1.</span> <span class="post-toc-text">It is {this.state.date.toLocaleTimeString()}.</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">12.</span> <span class="post-toc-text">Hello, world!</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">12.1.</span> <span class="post-toc-text">It is {this.state.date.toLocaleTimeString()}.</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">13.</span> <span class="post-toc-text">Hello, world!</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">13.1.</span> <span class="post-toc-text">It is {this.state.date.toLocaleTimeString()}.</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">14.</span> <span class="post-toc-text">Hello, world!</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#undefined"><span class="post-toc-number">14.1.</span> <span class="post-toc-text">It is {this.state.date.toLocaleTimeString()}.</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-react/begin"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title"></h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-04-02 23:27:54" datetime="2018-04-02T15:27:54.978Z"  itemprop="datePublished">2018-04-02</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>组件和props</p>
+<p>组件让你按需分割界面，可重用的块，思考将这些快分割；</p>
+<p>组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素</p>
+<p>这个简单的方式定义了一个组件，使用js的函数<br>function Welcome(props) {<br>  return </p><h1>Hello, {props.name}</h1>;<br>}<br>这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的properties）数据对象参数并且返回一个react元素。<br>我们称这样的组件为functional，因为他是字面上的js函数？<p></p>
+<p><strong>渲染组件</strong></p>
+<p>我们可以定义一个react元素代表传统的标签</p>
+<p>const ele = <div>;</div></p>
+<p>元素也可以代表用户自定义的组件</p>
+<p>当react看见一个代表用户自定义组件的元素时，它会传入JSX属性到这个组件作为一个单一的对象，我们成这样的对象为props</p>
+<p>ex：<br>    function Welcome(props) {<br>      return </p><h1>Hello, {props.name}</h1>;<br>    }<p></p>
+<pre><code>const element = &lt;Welcome name=&quot;Sara&quot; /&gt;;
+ReactDOM.render(
+  element,
+  document.getElementById(&apos;root&apos;)
+);
+</code></pre><p>他将会输出</p><h1>Hello, Sara</h1><p></p>
+<p>让我们总结一下在这个例子中方式发生了什么：</p>
+<ul>
+<li>1，我们在React.Dom中使用了<welcome name="Sara">元素</welcome></li>
+<li>2，react将{name: “Sara”}作为props传给Welcome组件</li>
+<li>3，我们的Welcome组件返回<h1>Hello Sara</h1>结果</li>
+<li>4，react dom匹配<h1>Hello Sara</h1>有效地更新DOM</li>
+</ul>
+<p>注：自定义组件首字母必须大写<br><small>当一个元素以一个小写的字母开始，它指向一个内建的组件，像<div> 或者 <span> 结果将会是一个字符串’div’ 或者 ‘span’,然后传给React.creactEalement，类型以一个大写字母开始，像<foo>，编译结果会是React.createElement(Foo),就爱那个会正确的返回一个定义的组件，或者从你的js文件中引入</foo></span></div></small></p>
+<p>Composing Compoents(晓不得咋个翻译额，直接引用原文还更容易理解)<br>Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen: in React apps, all those are commonly expressed as components.</p>
+<p>For example, we can create an App component that renders Welcome many times:</p>
+<p>function Welcome(props) {<br>  return </p><h1>Hello, {props.name}</h1>;<br>}<p></p>
+<p>function App() {<br>  return (<br>    <div><br>      <welcome name="Sara"><br>      <welcome name="Cahal"><br>      <welcome name="Edite"><br>    </welcome></welcome></welcome></div><br>  );<br>}</p>
+<p>ReactDOM.render(<br>  <app>,<br>  document.getElementById(‘root’)<br>);</app></p>
+<p>Extracting Components<br>Don’t be afraid to split components into smaller components.</p>
+<p>For example, consider this Comment component:</p>
+<p>function Comment(props) {<br>  return (<br>    <div classname="Comment"><br>      <div classname="UserInfo"><br>        <img classname="Avatar" src="{props.author.avatarUrl}" alt="{props.author.name}"><br>        <div classname="UserInfo-name"><br>          {props.author.name}<br>        </div><br>      </div><br>      <div classname="Comment-text"><br>        {props.text}<br>      </div><br>      <div classname="Comment-date"><br>        {formatDate(props.date)}<br>      </div><br>    </div><br>  );<br>}</p>
+<p>它接收auther，text，和date作为props，描述可一个在社交媒体网站上的评论组件</p>
+<p>改变这个组件可能会变得很棘手，因为它含有很多层的嵌套，而且它也很难复用在其他的parts。让我们从他上面分割一些组件下来。</p>
+<p>首先我们分割头像组件</p>
+<p>function Avatar(props) {<br>  return (<br>    <img classname="Avatar" src="{props.user.avatarUrl}" alt="{props.user.name}"></p>
+<p>  );<br>}</p>
+<p>头像组件并不需要知道他是要在一个组件内渲染，这也是为什么我们给一个更为广泛的name: user而不是author作为props</p>
+<p>我们建议在组件中的name props在视图中有自己的重点，而不是考虑在上下文中它的使用</p>
+<p>现在我们可以使用更小一点的组件<br>function Comment(props) {<br>  return (<br>    <div classname="Comment"><br>      <div classname="UserInfo"><br>        <avatar user="{props.author}"><br>        <div classname="UserInfo-name"><br>          {props.author.name}<br>        </div><br>      </avatar></div><br>      <div classname="Comment-text"><br>        {props.text}<br>      </div><br>      <div classname="Comment-date"><br>        {formatDate(props.date)}<br>      </div><br>    </div><br>  );<br>}</p>
+<p>接下来我们分割一个userInfo</p>
+<p>组件渲染Avatar接下来是user‘s name<br>function UserInfo(props) {<br>  return (<br>    <div classname="UserInfo"><br>      <avatar user="{props.user}"><br>      <div classname="UserInfo-name"><br>        {props.user.name}<br>      </div><br>    </avatar></div><br>  );<br>}</p>
+<p>这让我们简单的组件更进一步<br>function Comment(props) {<br>  return (<br>    <div classname="Comment"><br>      <userinfo user="{props.author}"><br>      <div classname="Comment-text"><br>        {props.text}<br>      </div><br>      <div classname="Comment-date"><br>        {formatDate(props.date)}<br>      </div><br>    </userinfo></div><br>  );<br>}</p>
+<p>组件分割也许在刚开始看起来像grunt的工作，但是有一个palette装了复用组件可以在大型app中使用。一个简单的规则是如果你的一部分UI使用了几次(Button, Panel, Avatar)，或者它自己足够复杂（App, FeedStory, Comment），这是一个好的复用组件的标准</p>
+<p>props和只读</p>
+<p>无论你是否使用function or class定义组件，他必须不能够被修改它自己的props，考虑这个求和函数<br>function sum(a, b) {<br>  return a + b;<br>}</p>
+<p>像这样的函数被叫做“pure”，因为他们并不会试图去修改他们的输入，而且当输入相同时总是返回相同的结果。</p>
+<p>作为对比，这个函数不是“pure”的，因为它会改变它自己的输入</p>
+<p>react是很灵活的，但是他有一个单一的严格规则：</p>
+<p>所有的组件都必须像pure函数以尊重他们的props</p>
+<p><strong>state and Lifecycle</strong></p>
+<p>到目前为止我们学习了如何更新UI</p>
+<p>我们使用ReactDOM.render()来改变渲染的输出</p>
+<p>function tick() {<br>  const element = (<br>    <div><br>      <h1>Hello, world!</h1><br>      <h2>It is {new Date().toLocaleTimeString()}.</h2><br>    </div><br>  );<br>  ReactDOM.render(<br>    element,<br>    document.getElementById(‘root’)<br>  );<br>}</p>
+<p>setInterval(tick, 1000);</p>
+<p>在这一章中，我们将会学习如何制作一个时钟组件，他是复用的而且封装性的，它会建立自己的计数器且每秒都会更新</p>
+<p>我们先封装一下他是什么样的</p>
+<p>function Clock(props) {<br>  return (<br>    <div><br>      <h1>Hello, world!</h1><br>      <h2>It is {props.date.toLocaleTimeString()}.</h2><br>    </div><br>  );<br>}</p>
+<p>function tick() {<br>  ReactDOM.render(<br>    <clock date="{new" date()}="">,<br>    document.getElementById(‘root’)<br>  );<br>}</clock></p>
+<p>setInterval(tick, 1000);</p>
+<p>无论怎样，它却少了一个关键的需求：事实上Clock建立一个计时器且每秒自动更新UI应该是一个细节上的实现。</p>
+<p>理想情况下我们想只写一次然后它自己更新：<br>ReactDOM.render(<br>  <clock>,<br>  document.getElementById(‘root’)<br>);</clock></p>
+<p>为了实现这个，我们需要向组件中添加“state”，</p>
+<p>state比props更小，但是他是私有的，而且组件对他有完全控制权</p>
+<p>我们曾经注意到组件作为类被定义时有一些传统的特性，本地的state正是如此： 一个只能被类使用的变量</p>
+<p>简单概括：Converting a Function to a Class<br>You can convert a functional component like Clock to a class in five steps:</p>
+<p>Create an ES6 class, with the same name, that extends React.Component.</p>
+<p>Add a single empty method to it called render().</p>
+<p>Move the body of the function into the render() method.</p>
+<p>Replace props with this.props in the render() body.</p>
+<p>Delete the remaining empty function declaration.</p>
+<p>class Clock extends React.Component {<br>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.props.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}</p>
+<p>现在clock组件作为类被定义，而不是函数</p>
+<p>这使得我们可以使用附加的局部state和生命周期特性</p>
+<p><strong>Adding Local State to a Class</strong></p>
+<p>我们将会使用三个步骤从props中移除date到state中：<br>1，在render()函数中使用this.state.date替换this.props.date,<br>class Clock extends React.Component {<br>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.state.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}<br>2, 添加一个类的构造器并给this.state初始化<br>class Clock extends React.Component {<br>  constructor(props) {<br>    super(props);<br>    this.state = {date: new Date()};<br>  }</p>
+<p>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.state.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}<br>注意我们是如何传入props到父构造器中的</p>
+<p>类组件应该总是向父组件传入props</p>
+<p>在<clock>元素中移除移除dete props<br>ReactDOM.render(<br>  <clock>,<br>  document.getElementById(‘root’)<br>);</clock></clock></p>
+<p>The result looks like this:</p>
+<p>class Clock extends React.Component {<br>  constructor(props) {<br>    super(props);<br>    this.state = {date: new Date()};<br>  }</p>
+<p>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.state.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}</p>
+<p>ReactDOM.render(<br>  <clock>,<br>  document.getElementById(‘root’)<br>);</clock></p>
+<p><strong>Adding Lifecycle Methods to a Class</strong></p>
+<p>In applications with many components, it’s very important to free up resources taken by the components when they are destroyed.</p>
+<p>We want to set up a timer whenever the Clock is rendered to the DOM for the first time. This is called “mounting” in React.</p>
+<p>We also want to clear that timer whenever the DOM produced by the Clock is removed. This is called “unmounting” in React.</p>
+<p>We can declare special methods on the component class to run some code when a component mounts and unmounts:</p>
+<p>class Clock extends React.Component {<br>  constructor(props) {<br>    super(props);<br>    this.state = {date: new Date()};<br>  }</p>
+<p>  componentDidMount() {</p>
+<p>  }</p>
+<p>  componentWillUnmount() {</p>
+<p>  }</p>
+<p>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.state.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}<br>These methods are called “lifecycle hooks”.</p>
+<p>The componentDidMount() hook runs after the component output has been rendered to the DOM. This is a good place to set up a timer:</p>
+<p>  componentDidMount() {<br>    this.timerID = setInterval(<br>      () =&gt; this.tick(),<br>      1000<br>    );<br>  }</p>
+<p>注意到我们是将timeID保存到this上的</p>
+<p>当this.props被react建立且this.state有一个特俗的意义，如果你需要存储一些不会显示在试图中的数据可以自由的手动添加字段到类中</p>
+<p>不在render中使用的数据也不应该出现在state中</p>
+<p>我们将会拆除计时器当componentWillUnmount被触发时，<br> componentWillUnmount() {<br>    clearInterval(this.timerID);<br>  }</p>
+<p>最终我们会实现一个叫做tick的方法，这个方法让组件每秒更新一次</p>
+<p>他将会使用this.setState()指定组件的局部state更新</p>
+<p>class Clock extends React.Component {<br>  constructor(props) {<br>    super(props);<br>    this.state = {date: new Date()};<br>  }</p>
+<p>  componentDidMount() {<br>    this.timerID = setInterval(<br>      () =&gt; this.tick(),<br>      1000<br>    );<br>  }</p>
+<p>  componentWillUnmount() {<br>    clearInterval(this.timerID);<br>  }</p>
+<p>  tick() {<br>    this.setState({<br>      date: new Date()<br>    });<br>  }</p>
+<p>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.state.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}</p>
+<p>ReactDOM.render(<br>  <clock>,<br>  document.getElementById(‘root’)<br>);</clock></p>
+<p>现在它能够正常工作了</p>
+<p>让我们简单总结一下是怎么回事并排序事件的触发顺序</p>
+<p>1，当<clock>组件被传入ReactDOM.render()时，react触发了Clock组件的构造函数，自从Clock需要显示当前事件，他使用一个包含时间的对象初始化this.state，我们将会在接下来更新他。<br>2，接着react使用了组件的render函数，这让react了解到那些数据应该在屏幕上显示，react下一步会匹配render的输出更新dom<br>3，当Clock的输出被内嵌到dom中，react触发componentDidMount函数，再此函数中Clock要求浏览器建立一个计时器每秒呼叫组件的tick方法<br>4，浏览器每秒呼叫tick函数，在函数中Clock计划使用setState改变当前时间去更新视图，感谢setState，react才能知道state被改变，接着使用render函数去更新那些应该在屏幕上显示的数据，这时，this.state.date将会不同于render函数中的数据，所以render函数的输出将会更新时间。<br>5，如果组件一旦从dom中移除，react将会运行componentWillUnmount函数，所以这个计时器也被停止</clock></p>
+<p>事件处理</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    post.last_updated<time datetime="2018-03-27T15:30:07.212Z" itemprop="dateUpdated">2018-03-27 23:30:07</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/04/02/react/begin/" target="_blank" rel="external">http://www.ylioo.com/2018/04/02/react/begin/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://www.ylioo.com">
+            <img src="/img/donnie.jpg" alt="suguanyang">
+            suguanyang
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ylioo.com/2018/04/02/react/begin/&title=blog&pic=http://www.ylioo.com/img/donnie.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ylioo.com/2018/04/02/react/begin/&title=blog&source=personal-website" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ylioo.com/2018/04/02/react/begin/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=blog&url=http://www.ylioo.com/2018/04/02/react/begin/&via=http://www.ylioo.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ylioo.com/2018/04/02/react/begin/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/04/02/react/dom/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">[no title]</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/04/02/npm/note/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">[no title]</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>footer.license</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>suguanyang &copy; 2015 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ylioo.com/2018/04/02/react/begin/&title=《No title》 — blog&pic=http://www.ylioo.com/img/donnie.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ylioo.com/2018/04/02/react/begin/&title=《No title》 — blog&source=personal-website" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ylioo.com/2018/04/02/react/begin/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — blog&url=http://www.ylioo.com/2018/04/02/react/begin/&via=http://www.ylioo.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ylioo.com/2018/04/02/react/begin/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://www.ylioo.com/2018/04/02/react/begin/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

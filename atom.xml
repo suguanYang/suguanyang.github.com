@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>blog</title>
+  <icon>https://www.gravatar.com/avatar/423957eb72270f157c9b04a457a8ad14</icon>
+  <subtitle>front-ends</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.ylioo.com/"/>
+  <updated>2018-03-30T09:11:34.436Z</updated>
+  <id>http://www.ylioo.com/</id>
+  
+  <author>
+    <name>suguanyang</name>
+    <email>wangbinqi77@gmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/front-end%20developer%20%E7%8E%8B%E5%BD%AC%E6%A3%8B/"/>
+    <id>http://www.ylioo.com/2018/04/02/front-end developer 王彬棋/</id>
+    <published>2018-04-02T15:27:55.238Z</published>
+    <updated>2018-03-30T09:11:34.436Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>前端工程师</strong><br><br><br><br><strong>姓名：</strong> 王彬棋<br><br><strong>年龄：</strong> 21<br><br><strong>邮箱：</strong> <a href="mailto:*wangbinqi77@gmail.com" target="_blank" rel="noopener">*wangbinqi77@gmail.com</a> or <a href="mailto:suguanyang@outlook.com" target="_blank" rel="noopener">suguanyang@outlook.com</a>*</p><p><strong>个人经历：</strong><br><br><span style="margin-left:30px;height:20px;">- 教育经历</span>： 2014-2017 四川工程职业技术学院，通信技术。<br><br><span style="margin-left:30px;height:20px;">- 工作经历</span>： 2017-至今 四川德瑞克体育产业集团， 前端工程师(javascript) <br><br><span style="margin-left:30px;height:20px;">- 项目经验</span>： <br><br><span style="margin-left:60px;">-     食有材手机商城(vue)<br><br><span style="margin-left:60px;">-     睿动乐app(混合开发)<br><br><span style="margin-left:60px;">-     睿动乐微信小程序</span></span></span></p><p><strong>个人技能：</strong><br><br><span style="margin-left:30px;">主要技能当然是javascript，熟悉javascript的设计模式与各种特性，单手实现pm以及后端的各种需求，得益于ES6与webpack，熟练使用js的面向对象编程。善于封装自己的库与组件。主要工作是写前端所以用的比较多的技巧还是函数式编程。熟悉vue，因为自己有主导过一个vue的项目（其实就我一个人啦）。熟悉H5+技术，从去年十月份到目前为止还在开发一个混合app。精通less，善于处理各种设备的分辨率与兼容问题。熟悉git管理工具。工作之外，熟悉nodejs，用express与koa在服务器上部署过网站。熟悉C语言，毕竟大学学的就是汇编(算了吧)和C。</span></p><p><strong>自我描述：</strong><br><br><span style="margin-left:30px;"><strong>人生哲言：生命有限，学海无涯。</strong>对新技术始终抱有最大的热情，喜欢在代码中找寻成就感，坚持贯彻 <em>「Talk is cheap. Show me the code」</em>的精神，在Github的领导下不断完善自身缺陷，向着技术界大佬的方向发展。工作中，追求代码的效率与简洁性，严谨仔细，充满热情，擅长交流工作，团队协调工作，善于融入新环境，技术与技术的交流是成为朋友的捷径。有效利用stackoverflow于github帮助自己更好的完成工作。学习新技术很快，能够阅读前端相关英文文档并结合自身理解翻译。题外话：业余的物理学爱好者。</span></p><p><strong>未来规划：</strong><br><br><span style="margin-left:30px;">自身职业规划上，目前正在考电子科大计算机与应用，除了文凭外，也为了使自己的基础知识更加的牢固。在工作上，学习typescript与react是重中之重，首先学习react的原因是react已经成为前段第一框架，自己做过混合开发也了解到react native的优势，而且它的官方文档做的十分之好，在coding中居然让我体会到技近乎于艺的感觉。至于typescript，这个是因为自己在工作中，发现js真的不太适合写大型的项目，因为各种bug总是层出不穷，为了应付这些bug我必须使用很多的try catch，return，异常检测，伪日志（线上用localstorage,开发中就用自己封装的output打印），但是还是会有各种问题，总结下来大部分是数据类型与逻辑判断的问题，这很大一部分原因是因为js是一门弱语言而且没有接口，没有真正意义上的模块化，对于类也不是太完善，当然在开发过程中和C比起来确实速度很快，但error与bug出现的次数要多得多，于有了ts的规范，可以让项目更加稳定。比较好的一点是我可以同时使用ts与react，在vscode中编程效率也不是太低。结合自己的职业道路，服务端语言是一门必不可缺的技术，虽然我熟悉nodejs，但是总感觉nodejs在处理业务逻辑时有些乏力，在关于tj（nodejs创始人之一）大神一篇文章中，他说到golang是解决服务端的最终解决方案，然后经过自己的了解，golang无论从学习成本，运行效率，语言特性都是一门比较优秀的语言，于是我的下一步学习方向应该就是它了。</span></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;前端工程师&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;姓名：&lt;/strong&gt; 王彬棋&lt;br&gt;&lt;br&gt;&lt;strong&gt;年龄：&lt;/strong&gt; 21&lt;br&gt;&lt;br&gt;&lt;strong&gt;邮箱：&lt;/strong&gt; &lt;a href=&quot;mailto
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84/1/"/>
+    <id>http://www.ylioo.com/2018/04/02/计算机系统结构/1/</id>
+    <published>2018-04-02T15:27:55.224Z</published>
+    <updated>2018-03-27T15:29:01.238Z</updated>
+    
+    <content type="html"><![CDATA[<p>固件： 写入EROM或EPROM（可编程只读存储器）中的程序，通俗的理解就是固化的软件；更简单的说，固件就是BIOS的软件，但又与普通软件不同，他是固化在集成电路中的代码，负责控制和协调集成电路的功能。</p><p>硬件：计算机硬件的简称。与软件相对。电子计算机系统中的所有实体部分和设备的统称。从基本结构来讲，计算机分为五个部分：运算器，存储器，控制器，输入设备，输出设备。</p><p>计算机 - 电路板 - 集成电路 - 模块 - 单元 - 逻辑门 - 场效应管</p><p>计算及基本功能：<br>    接收数据 - 存储数据 - 操作数据 - 输出结果</p><p>Application Software:<br>    Wriiten in high-level language<br>System Software:<br>    Compiler:<br>        translates HLL(hige-level language) code to machine code<br>    Operating System:<br>        Handling i/o<br>        Manageing memory and storage<br>        Scheduling tasks &amp; sharing resource<br>Hardware:<br>    Processor, memory, I/O controllers</p><p>Levels of Program Code:<br>    High-Level language:<br>        Level of abstraction closer to problem domain<br>        Provides for productivity and portablility<br>    Assembly language:<br>        Textual representation of instructions<br>    Hardware representation:<br>        Binaray digits(bits)<br>        Encode instructions and data</p><p>1 计算机系统的多层次结构：<br>    1， M0 微程序（微指令）机器<br>    2， M1 传统（机器指令）机器<br>    3， M2 操作系统（作业控制） 机器<br>    4， M3 汇编语言机器<br>    5， M4 高级语言机器<br>    6， M5 应用语言机器</p><pre><code>其中1-2位实际机器（固件，硬件）。 3-6为虚拟机器(软件)</code></pre><p>2 各个机器级的实现的依靠：<br>    翻译和解释</p><p>3 翻译：<br>    translation 是先用转换程序将高一级机器级上实现的程序整个变化成低一级机器级上等效的程序，然后再低一级机器实现的技术。</p><p>4 解释：<br>    interpretation 是低级机器级上用它的一串语句或指令来仿真高级机器上的一条语句或指令的功能，通过高级机器语言程序中的每条语句或指令逐条解释来实现的技术</p><pre><code>（高级语言翻译成汇编，通过指令去解释汇编）</code></pre><p>5 M0-M5各级的实现方式：<br>    M0 用微程序（固件）实现<br>    M1 用硬件实现<br>    其他大多采用软件实现</p><p>6 虚拟机器的定义：<br>    以软件为主实现的机器</p><p>7 实际机器的定义：<br>    以硬件或固件实现的实际机器</p><p>8 透明的定义：</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;固件： 写入EROM或EPROM（可编程只读存储器）中的程序，通俗的理解就是固化的软件；更简单的说，固件就是BIOS的软件，但又与普通软件不同，他是固化在集成电路中的代码，负责控制和协调集成电路的功能。&lt;/p&gt;
+&lt;p&gt;硬件：计算机硬件的简称。与软件相对。电子计算机系统中的所
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/wechat%E5%B0%8F%E7%A8%8B%E5%BA%8F/bascal/"/>
+    <id>http://www.ylioo.com/2018/04/02/wechat小程序/bascal/</id>
+    <published>2018-04-02T15:27:55.193Z</published>
+    <updated>2018-03-30T07:33:56.515Z</updated>
+    
+    <content type="html"><![CDATA[<p>分享功能：<br>    最好按照这种格式写：<br>        onShareAppMessage: function() {<br>            return {<br>                title: this.data.team_name,<br>                path: <code>/pages/team/team?activity_id=${this.data.activity_id}&amp;group_id=${this.data.group_id}&amp;token=${this.data.has_token.invite_token}&amp;group_token=${this.data.has_token.group_token}</code>,<br>                success: function(res) {<br>                    var shareTickets = res.shareTickets;<br>                    if (shareTickets.length == 0) {<br>                        return false;<br>                    }<br>                    wx.getShareInfo({<br>                        shareTicket: shareTickets[0],<br>                        success: function(res) {<br>                            var encryptedData = res.encryptedData;<br>                            var iv = res.iv;<br>                        }<br>                    })<br>                },<br>                fail: function(res) {<br>                    // 转发失败<br>                }<br>            }<br>        },</p><p>不要用es6的onShareAppMessage(){}这种写法</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;分享功能：&lt;br&gt;    最好按照这种格式写：&lt;br&gt;        onShareAppMessage: function() {&lt;br&gt;            return {&lt;br&gt;                title: this.data.team_name,
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/webpack/configuration/"/>
+    <id>http://www.ylioo.com/2018/04/02/webpack/configuration/</id>
+    <published>2018-04-02T15:27:55.167Z</published>
+    <updated>2018-03-19T06:57:40.921Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>loader:</strong>    </p><ul><li>loader 用于对模块的源代码进行转换。loader 可以使你在 import 或”加载”模块时预处理文件。因此，loader 类似于其他构建工具中“任务(task)”，并提供了处理前端构建步骤的强大方法。loader 可以将文件从不同的语言（如 TypeScript）转换为 JavaScript，或将内联图像转换为 data URL。loader 甚至允许你直接在 JavaScript 模块中 import CSS文件！</li></ul><p><code>module.exports = {<br>  module: {<br>    rules: [<br>      { test: /.css$/, use: ‘css-loader’ },<br>      { test: /.ts$/, use: ‘ts-loader’ }<br>    ]<br>  }<br>};</code></p><h1 id="使用-Loader"><a href="#使用-Loader" class="headerlink" title="使用 Loader"></a>使用 Loader</h1><p>在你的应用程序中，有三种使用 loader 的方式：</p><ul><li></li><li>配置（推荐）：在 webpack.config.js 文件中指定 loader。</li><li>内联：在每个 import 语句中显式指定 loader。</li><li>CLI：在 shell 命令中指定它们。</li></ul><p>注： v2后loaders改为rules</p><h1 id="Entry"><a href="#Entry" class="headerlink" title="Entry"></a>Entry</h1><p><strong>多页面应用程序</strong><br><em>webpack.config.js</em></p><p><code>const config = {<br>  entry: {<br>    pageOne: ‘./src/pageOne/index.js’,<br>    pageTwo: ‘./src/pageTwo/index.js’,<br>    pageThree: ‘./src/pageThree/index.js’<br>  }<br>};</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;loader:&lt;/strong&gt;    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;loader 用于对模块的源代码进行转换。loader 可以使你在 import 或”加载”模块时预处理文件。因此，loader 类似于其他构建工具中“任务(task)”，并提供了处理前端构
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/ts/%E6%B3%9B%E5%9E%8B/"/>
+    <id>http://www.ylioo.com/2018/04/02/ts/泛型/</id>
+    <published>2018-04-02T15:27:55.138Z</published>
+    <updated>2018-03-22T14:52:27.359Z</updated>
+    
+    <content type="html"><![CDATA[<p>function identity<t>(arg: T): T {<br>    return arg;<br>}</t></p><p>这里T是类型变量，T帮助我们捕获用户传入的类型（ex：number），之后我们就可以使用这个类型。之后我们再次使用了T当作返回值类型，现在我们可以知道参数类型与返回值类型是相同的了。这允许我们跟踪函数里使用的类型信息。</p><p>我们把这个版本的identity函数叫做泛型，因为它可以适用于多个类型。不同于使用any，他不会丢失信息，像第一个例子那样保持准确性。传入什么类型便会返回什么类型。</p><p>我们定义了泛型函数后，可以使用两种方法使用。第一种是，传入所以的参数，包括类型参数：<br>let output = identity<string>(“myString”);  // type of output will be ‘string’</string></p><p>这里我们明确的指定了T是string类型，并作为一个参数传给函数，使用了&lt;&gt;而不是（）。<br>第二种方法将会更简单，我们利用了类型推论–即编译器会自动的识别，根据传入的参数类型自动的帮我们确定T的类型。<br>let output = identity(“myString”);  // type of output will be ‘string’</p><p>注意我们么们没有明确的传入类型in尖括号，编译器会查看参数，并将T也设为参数类型，类型函数推断帮助我们保持代码的精简与可读性，但是有些时候你也需要想上面那样明确地传入类型参数当编译器不能自动推论，这可能在比较复杂的情况下出现。</p><p>当你开始使用泛型函数，你会注意到当你创建像identity这样的泛型函数时，编译器会在函数内使用任何的泛型参数类型正确的执行，实际上你应该传入任何类型的参数。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;function identity&lt;t&gt;(arg: T): T {&lt;br&gt;    return arg;&lt;br&gt;}&lt;/t&gt;&lt;/p&gt;
+&lt;p&gt;这里T是类型变量，T帮助我们捕获用户传入的类型（ex：number），之后我们就可以使用这个类型。之后我们再次使用了T当作返回值类型，现
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/ts/library/"/>
+    <id>http://www.ylioo.com/2018/04/02/ts/library/</id>
+    <published>2018-04-02T15:27:55.107Z</published>
+    <updated>2018-03-18T09:42:15.462Z</updated>
+    
+    <content type="html"><![CDATA[<p>概述<br>一般来讲，你组织声明文件的方式取决于库是如何被使用的。 在JavaScript中一个库有很多使用方式，这就需要你书写声明文件去匹配它们。 这篇指南涵盖了如何识别常见库的模式，和怎样书写符合相应模式的声明文件。</p><p>针对每种主要的库的组织模式，在模版一节都有对应的文件。 你可以利用它们帮助你快速上手。</p><p>识别库的类型<br>首先，我们先看一下TypeScript声明文件能够表示的库的类型。 这里会简单展示每种类型的库的使用方式，如何去书写，还有一些真实案例。</p><p>识别库的类型是书写声明文件的第一步。 我们将会给出一些提示，关于怎样通过库的使用方法及其源码来识别库的类型。 根据库的文档及组织结构不同，这两种方式可能一个会比另外的那个简单一些。 我们推荐你使用任意你喜欢的方式。</p><p>全局库<br>全局库是指能在全局命名空间下访问的（例如：不需要使用任何形式的import）。 许多库都是简单的暴露出一个或多个全局变量。 比如，如果你使用过jQuery，$变量可以被够简单的引用：</p><p>$(() =&gt; { console.log(‘hello!’); } );<br>你经常会在全局库的指南文档上看到如何在HTML里用脚本标签引用库：</p><p><script src="http://a.great.cdn.for/someLib.js"></script><br>目前，大多数流行的全局访问型库实际上都以UMD库的形式进行书写（见后文）。 UMD库的文档很难与全局库文档两者之间难以区分。 在书写全局声明文件前，一定要确认一下库是否真的不是UMD。</p><p>从代码上识别全局库<br>全局库的代码通常都十分简单。 一个全局的“Hello, world”库可能是这样的：</p><p>function createGreeting(s) {<br>    return “Hello, “ + s;<br>}<br>或这样：</p><p>window.createGreeting = function(s) {<br>    return “Hello, “ + s;<br>}<br>当你查看全局库的源代码时，你通常会看到：</p><p>顶级的var语句或function声明<br>一个或多个赋值语句到window.someName<br>假设DOM原始值像document或window是存在的<br>你不会看到：</p><p>检查是否使用或如何使用模块加载器，比如require或define<br>CommonJS/Node.js风格的导入如var fs = require(“fs”);<br>define(…)调用<br>文档里说明了如何去require或导入这个库<br>全局库的例子<br>由于把一个全局库转变成UMD库是非常容易的，所以很少流行的库还再使用全局的风格。 然而，小型的且需要DOM（或没有依赖）的库可能还是全局类型的。</p><p>全局库模版<br>模版文件global.d.ts定义了myLib库作为例子。 一定要阅读”防止命名冲突”补充说明。</p><p>模块化库<br>一些库只能工作在模块加载器的环境下。 比如，像express只能在Node.js里工作所以必须使用CommonJS的require函数加载。</p><p>ECMAScript 2015（也就是ES2015，ECMAScript 6或ES6），CommonJS和RequireJS具有相似的导入一个模块的表示方法。 例如，对于JavaScript CommonJS （Node.js），有下面的代码</p><p>var fs = require(“fs”);<br>对于TypeScript或ES6，import关键字也具有相同的作用：</p><p>import fs = require(“fs”);<br>你通常会在模块化库的文档里看到如下说明：</p><p>var someLib = require(‘someLib’);<br>或</p><p>define(…, [‘someLib’], function(someLib) {</p><p>});<br>与全局模块一样，你也可能会在UMD模块的文档里看到这些例子，因此要仔细查看源码和文档。</p><p>从代码上识别模块化库<br>模块库至少会包含下列具有代表性的条目之一：</p><p>无条件的调用require或define<br>像import * as a from ‘b’; or export c;这样的声明<br>赋值给exports或module.exports<br>它们极少包含：</p><p>对window或global的赋值<br>模块化库的例子<br>许多流行的Node.js库都是这种模块化的，例如express，gulp和request。</p><p>UMD<br>UMD模块是指那些既可以作为模块使用（通过导入）又可以作为全局（在没有模块加载器的环境里）使用的模块。 许多流行的库，比如Moment.js，就是这样的形式。 比如，在Node.js或RequireJS里，你可以这样写：</p><p>import moment = require(“moment”);<br>console.log(moment.format());<br>然而在纯净的浏览器环境里你也可以这样写：</p><p>console.log(moment.format());<br>识别UMD库<br>UMD模块会检查是否存在模块加载器环境。 这是非常形容观察到的模块，它们会像下面这样：</p><p>(function (root, factory) {<br>    if (typeof define === “function” &amp;&amp; define.amd) {<br>        define([“libName”], factory);<br>    } else if (typeof module === “object” &amp;&amp; module.exports) {<br>        module.exports = factory(require(“libName”));<br>    } else {<br>        root.returnExports = factory(root.libName);<br>    }<br>}(this, function (b) {<br>如果你在库的源码里看到了typeof define，typeof window，或typeof module这样的测试，尤其是在文件的顶端，那么它几乎就是一个UMD库。</p><p>UMD库的文档里经常会包含通过require“在Node.js里使用”例子， 和“在浏览器里使用”的例子，展示如何使用<script>标签去加载脚本。</p><p>UMD库的例子<br>大多数流行的库现在都能够被当成UMD包。 比如jQuery,Moment.js,lodash和许多其它的。</p><p>模版<br>针对模块有三种可用的模块， module.d.ts, module-class.d.ts and module-function.d.ts.</p><p>使用module-function.d.ts，如果模块能够作为函数调用。</p><p>var x = require(“foo”);<br>// Note: calling ‘x’ as a function<br>var y = x(42);<br>一定要阅读补充说明： “ES6模块调用签名的影响”</p><p>使用module-class.d.ts如果模块能够使用new来构造：</p><p>var x = require(“bar”);<br>// Note: using ‘new’ operator on the imported variable<br>var y = new x(“hello”);<br>相同的补充说明作用于这些模块。</p><p>如果模块不能被调用或构造，使用module.d.ts文件。</p><p>模块插件或UMD插件<br>一个模块插件可以改变一个模块的结构（UMD或模块）。 例如，在Moment.js里，moment-range添加了新的range方法到monent对象。</p><p>对于声明文件的目标，我们会写相同的代码不论被改变的模块是一个纯粹的模块还是UMD模块。</p><p>模版<br>使用module-plugin.d.ts模版。</p><p>全局插件<br>一个全局插件是全局代码，它们会改变全局对象的结构。 对于全局修改的模块，在运行时存在冲突的可能。</p><p>比如，一些库往Array.prototype或String.prototype里添加新的方法。</p><p>识别全局插件<br>全局通常很容易地从它们的文档识别出来。</p><p>你会看到像下面这样的例子：</p><p>var x = “hello, world”;<br>// Creates new methods on built-in types<br>console.log(x.startsWithHello());</p><p>var y = [1, 2, 3];<br>// Creates new methods on built-in types<br>console.log(y.reverseAndSort());<br>模版<br>使用global-plugin.d.ts模版。</p><p>全局修改的模块<br>当一个全局修改的模块被导入的时候，它们会改变全局作用域里的值。 比如，存在一些库它们添加新的成员到String.prototype当导入它们的时候。 这种模式很危险，因为可能造成运行时的冲突， 但是我们仍然可以为它们书写声明文件。</p><p>识别全局修改的模块<br>全局修改的模块通常可以很容易地从它们的文档识别出来。 通常来讲，它们与全局插件相似，但是需要require调用来激活它们的效果。</p><p>你可能会看到像下面这样的文档:</p><p>// ‘require’ call that doesn’t use its return value<br>var unused = require(“magic-string-time”);<br>/<em> or </em>/<br>require(“magic-string-time”);</p><p>var x = “hello, world”;<br>// Creates new methods on built-in types<br>console.log(x.startsWithHello());</p><p>var y = [1, 2, 3];<br>// Creates new methods on built-in types<br>console.log(y.reverseAndSort());<br>模版<br>使用global-modifying-module.d.ts模版。</p><p>使用依赖<br>可能会有以下几种依赖。</p><p>依赖全局库<br>如果你的库依赖于某个全局库，使用/// <reference types="..." />指令：</p><p>/// <reference types="someLib" /></p><p>function getThing(): someLib.thing;<br>依赖模块<br>如果你的库依赖于模块，使用import语句：</p><p>import * as moment from “moment”;</p><p>function getThing(): moment;<br>依赖UMD库<br>从全局库<br>如果你的全局库依赖于某个UMD模块，使用/// &lt;reference types指令：</p><p>/// <reference types="moment" /></p><p>function getThing(): moment;<br>从一个模块或UMD库<br>如果你的模块或UMD库依赖于一个UMD库，使用import语句：</p><p>import * as someLib from ‘someLib’;<br>不要使用/// &lt;reference指令去声明UMD库的依赖！</p><p>补充说明<br>防止命名冲突<br>注意，在书写全局声明文件时，允许在全局作用域里定义很多类型。 我们十分不建义这样做，当一个工程里有许多声明文件时，它会导致无法处理的命名冲突。</p><p>一个简单的规则是使用库定义的全局变量名来声明命名空间类型。 比如，库定义了一个全局的值cats，你可以这样写</p><p>declare namespace cats {<br>    interface KittySettings { }<br>}<br>不要</p><p>// at top-level<br>interface CatsKittySettings { }<br>这样也保证了库在转换成UMD的时候没有任何的破坏式改变，对于声明文件用户来说。</p><p>ES6模块插件的影响<br>一些插件添加或修改已存在的顶层模块的导出部分。 当然这在CommonJS和其它加载器里是允许的，ES模块被当作是不可改变的因此这种模式就不可行了。 因为TypeScript是能不预知加载器类型的，所以没没在编译时保证，但是开发者如果要转到ES6模块加载器上应该注意这一点。</p><p>ES6模块调用签名的影响<br>很多流行库，比如Express，暴露出自己作为可以调用的函数。 比如，典型的Express使用方法如下：</p><p>import exp = require(“express”);<br>var app = exp();<br>在ES6模块加载器里，顶层的对象（这里以exp导入）只能具有属性； 顶层的模块对象永远不能被调用。 十分常见的解决方法是定义一个default导出到一个可调用的/可构造的对象； 一会模块加载器助手工具能够自己探测到这种情况并且使用default导出来替换顶层对象。</p></script></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;概述&lt;br&gt;一般来讲，你组织声明文件的方式取决于库是如何被使用的。 在JavaScript中一个库有很多使用方式，这就需要你书写声明文件去匹配它们。 这篇指南涵盖了如何识别常见库的模式，和怎样书写符合相应模式的声明文件。&lt;/p&gt;
+&lt;p&gt;针对每种主要的库的组织模式，在模版一节
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/ts/issus/"/>
+    <id>http://www.ylioo.com/2018/04/02/ts/issus/</id>
+    <published>2018-04-02T15:27:55.082Z</published>
+    <updated>2018-03-23T16:37:03.918Z</updated>
+    
+    <content type="html"><![CDATA[<p>1,    A maximum of 1 class per file is allowed. (max-classes-per-file)(不允许在同一个文件中定义多个类)</p><p>SOLUTION： 在tslint中添加规则： “max-classes-per-file”: true,</p><p>2，Declaration of public instance field not allowed after declaration of public instance method. Instead, this should come at the beginning of the class/interface. (member-ordering) （方法类型排序限制）</p><p>SOLUTION： “member-ordering”: [<br>  true,<br>  {<br>    “order”: [<br>      “public-static-field”,<br>      “public-instance-field”,<br>      “public-constructor”,<br>      “private-static-field”,<br>      “private-instance-field”,<br>      “private-constructor”,<br>      “public-instance-method”,<br>      “protected-instance-method”,<br>      “private-instance-method”<br>    ]<br>  }<br>]</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1,    A maximum of 1 class per file is allowed. (max-classes-per-file)(不允许在同一个文件中定义多个类)&lt;/p&gt;
+&lt;p&gt;SOLUTION： 在tslint中添加规则： “max-classes-per-f
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/ts/bascal/"/>
+    <id>http://www.ylioo.com/2018/04/02/ts/bascal/</id>
+    <published>2018-04-02T15:27:55.050Z</published>
+    <updated>2018-03-18T10:11:03.404Z</updated>
+    
+    <content type="html"><![CDATA[<p>turple:    可以包含不同数据类型的数组</p><p>默认情况下，undefined and null 是所有类型的子类型，意味着你可以给任意类型赋值undefined and null.</p><pre><code>function f({ a, b = 0 } = { a: &quot;&quot; }): void {// ...}f({ a: &quot;yes&quot; }); // ok, default b = 0f(); // ok, default to {a: &quot;&quot;}, which then defaults b = 0f({}); // error, &apos;a&apos; is required if you supply an argument</code></pre><p>意味着函数f有默认值{a: “”}而b = 0只是给参数的b属性赋默认值，总而言之，你如果要给f传递一个参数，那么参数必须带有a属性</p><p>对象展开还有其它一些意想不到的限制。 首先，它仅包含对象 自身的可枚举属性。 大体上是说当你展开一个对象实例时，你会丢失其方法：</p><pre><code>class C {  p = 12;  m() {  }}let c = new C();let clone = { ...c };clone.p; // okclone.m(); // error!</code></pre><p><code><br>    function identity<t>(arg: T): T {<br>       return arg;<br>    }<br></t></code><br>我们给identity添加了类型变量T。 T帮助我们捕获用户传入的类型（比如：number），之后我们就可以使用这个类型。 之后我们再次使用了T当做返回值类型。现在我们可以知道参数类型与返回值类型是相同的了。 这允许我们跟踪函数里使用的类型的信息。</p><p style="color: #999;background-color:#EEF0F4;"><strong>泛型，即“参数化类型”。一提到参数，最熟悉的就是定义方法时有形参，然后调用此方法时传递实参。那么参数化类型怎么理解呢？顾名思义，就是将类型由原来的具体的类型参数化，类似于方法中的变量参数，此时类型也定义成参数形式（可以称之为类型形参），然后在使用/调用时传入具体的类型（类型实参）</strong>。<br><br>泛型的本质是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数类型可以用在类、接口和方法中，分别被称为泛型类、泛型接口、泛型方法。</p><pre><code>interface SquareConfig {  color?: string;    // 不是必须的属性  width?: number;}</code></pre><p>一些对象属性只能在对象刚刚创建的时候修改其值。 你可以在属性名前用readonly来指定只读属性:</p><pre><code> interface Point {    readonly x: number;    readonly y: number;}</code></pre><p>TypeScript具有ReadonlyArray<t>类型，它与Array<t>相似，只是把所有可变方法去掉了，因此可以确保数组创建后再也不能被修改：</t></t></p><pre><code>let a: number[] = [1, 2, 3, 4];let ro: ReadonlyArray&lt;number&gt; = a;ro[0] = 12; // error!ro.push(5); // error!ro.length = 100; // error!a = ro; // error!</code></pre><p>上面代码的最后一行，可以看到就算把整个ReadonlyArray赋值到一个普通数组也是不可以的。 但是你可以用类型断言重写：</p><pre><code>a = ro as number[];</code></pre><p><strong>readonly vs const<br></strong><br>最简单判断该用readonly还是const的方法是看要把它做为变量使用还是做为一个属性。 做为变量使用的话用const，若做为属性则使用readonly。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;turple:    可以包含不同数据类型的数组&lt;/p&gt;
+&lt;p&gt;默认情况下，undefined and null 是所有类型的子类型，意味着你可以给任意类型赋值undefined and null.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function f({ a, b = 0 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/stylesheets/margin%E9%87%8D%E5%8F%A0/"/>
+    <id>http://www.ylioo.com/2018/04/02/stylesheets/margin重叠/</id>
+    <published>2018-04-02T15:27:55.031Z</published>
+    <updated>2018-03-21T16:21:12.885Z</updated>
+    
+    <content type="html"><![CDATA[<p>���������鼶���ӵĴ�ֱ���ڱ߽���غϡ�����ı߽��������ڱ߽���������ֵ��������ָ��߽磬�����������߽��м�ȥ����ֵ���ĸ��߽硣���û�����߽磬������м�ȥ����ֵ���ĸ��߽硣ע�⣺���ڵĺ��ӿ��ܲ������ɸ��ӹ�ϵ��ͬ����ϵ��Ԫ�����ɡ�<br>���Ǳ߽���ص�Ҳ�����������</p><p>1��ˮƽ�߾���Զ�����غϡ�<br>2���ڹ淶�ĵ��У�2�������ϵĿ鼶��ģ�����ڵĴ�ֱmargin���ص������յ�marginֵ���㷽�����£�<br>a��ȫ����Ϊ��ֵ��ȡ����ߣ�<br>b����ȫ����ֵ����ȡ����ֵ��Ȼ������ֵ��ȥ���ֵ��<br>c��û����ֵ����ȡ����ֵ��Ȼ����0��ȥ���ֵ��<br>ע�⣺���ڵĺ�ģ�Ϳ�����DOMԪ�ض�̬������û�����ڻ�̳й�ϵ��<br>3�����ڵĺ�ģ���У�������е�һ���Ǹ����ģ�float������ֱmargin�����ص������Ҹ����ĺ�ģ�ͺ�������Ԫ��֮��Ҳ��������<br>4��������overflow���Ե�Ԫ�غ�������Ԫ��֮���margin�����ص���overflowȡֵΪvisible���⣩��<br>5�������˾��Զ�λ��position:absolute���ĺ�ģ�ͣ���ֱmargin���ᱻ�ص������Һ����ǵ���Ԫ��֮��Ҳ��һ����<br>6��������display:inline-block��Ԫ�أ���ֱmargin�����ص������������ǵ���Ԫ��֮��Ҳ��һ����<br>7�����һ����ģ�͵�����margin���ڣ���ʱ����margin�����ص����ǣ�collapse through����������������£�Ԫ�ص�λ�ã�position��ȡ������������Ԫ�ص�margin�Ƿ��ص���<br>a�����Ԫ�ص�margin�����ĸ�Ԫ�ص�margin-top�ص���һ�𣬺�ģ��border-top�ı߽綨������ĸ�Ԫ����ͬ��<br>b�����⣬����Ԫ�صĸ�Ԫ�ز�����margin���ص�������˵ֻ�и�Ԫ�ص�margin-bottom�ǲ������ġ����Ԫ�ص�border-top���㣬��ôԪ�ص�border-top�߽�λ�ú�ԭ��һ����<br>һ��Ӧ�������������Ԫ�ص�margin-top����������Ŀ鼶��Ԫ�ص�margin-bottom�ص���<br>ע�⣬��Щ�Ѿ����ص����ǵ�Ԫ�ص�λ�ö������Ѿ��ص���Ԫ�ص�λ��û���κ�Ӱ�죻ֻ���ڶ���ЩԪ�ص���Ԫ�ض�λʱ��border-top�߽�λ�ò��Ǳ���ġ�<br>8����Ԫ�صĴ�ֱmargin���ᱻ�ص���</p><p>��߾�(margin)�ص�ʾ��</p><p>��߾��ص���ָ������ֱ���ڵĿ鼶Ԫ�أ������������߾�����ʱ������߾������ص��������ص������߾࣬�������нϴ��ߡ�<br>ͼʾ��</p><p>��һ���ص������ǵ�һ��Ԫ�ذ�������һ��Ԫ��֮��ʱ����Ԫ���븸Ԫ��֮��Ҳ������ص������ص������߾࣬������������ߣ�<br>����дͼƬ����<br>CSS ��߾�(margin)�ص�����ֹ����<br>ͬ�����һ�������ݵĿ�Ԫ�أ����������±߾�Ҳ������ص���<br>����дͼƬ����<br>CSS ��߾�(margin)�ص�����ֹ����</p><p>��߾��ص�������</p><p>��߾���ص�ֻ��������ͨ���ĵ���������߾�֮�䣬����������е���ֵĹ�����ʵ������ʵ���塣���룬��������������һϵ�й���Ŀ鼶Ԫ�أ������P��ʱ����ô��Ԫ��֮����Ϊ��߾��ص��Ĵ��ڣ�����֮��Ͳ������˫���ľ��롣</p><p>��ֹ��߾��ص����������</p><p>��Ȼ��߾���ص�����һ�������壬����ʱ�������������ȴ������Ԫ��֮������ص�����ô���������¼�������ɹ��ο���</p><p>���Ԫ��padding����<br>�ڲ�Ԫ��͸���߿� border:1px solid transparent;<br>�ڲ�Ԫ�ؾ��Զ�λ postion:absolute:<br>���Ԫ�� overflow:hidden;<br>�ڲ�Ԫ�� ��float:left;��display:inline-block;<br>�ڲ�Ԫ��padding:1px;<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>���Ͻ���ɸ���ʵ���������ȡ��</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;���������鼶���ӵĴ�ֱ���ڱ߽���غϡ�����ı߽��������ڱ߽���������ֵ��������ָ��߽磬�����������߽��м�ȥ����ֵ���ĸ��߽硣���û�����߽磬������м�ȥ����ֵ���ĸ��߽硣ע�⣺���ڵ
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/react/router/"/>
+    <id>http://www.ylioo.com/2018/04/02/react/router/</id>
+    <published>2018-04-02T15:27:55.018Z</published>
+    <updated>2018-03-31T16:06:48.734Z</updated>
+    
+    <content type="html"><![CDATA[<p>for browser environment we can use react-router-dom,</p><p><browserrouter> manage dynamic request,</browserrouter></p><p><hashrouter> for static website</hashrouter></p><p><strong>History</strong></p><p>every router will create a history object and for search current location,it will rerender website when it changes.<br>this history obj promise react router provides other<br>component’s reusability, so other components must render in router. if a react router component retrospect<br>to parent but can’t find router component, this component<br>will not working.</p><p><strong>router</strong><br>路由器组建无法接受两个及以上的子元素。基于这种操作的restrict，<br>创建一个<app>组建来渲染应用其余部分是一个有效地方法<br>对于服务端渲染，将应用从router组件中分离也是重要的。</app></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;for browser environment we can use react-router-dom,&lt;/p&gt;
+&lt;p&gt;&lt;browserrouter&gt; manage dynamic request,&lt;/browserrouter&gt;&lt;/p&gt;
+&lt;p&gt;&lt;hashrouter&gt; f
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/react/notice/"/>
+    <id>http://www.ylioo.com/2018/04/02/react/notice/</id>
+    <published>2018-04-02T15:27:55.016Z</published>
+    <updated>2018-03-27T16:43:18.523Z</updated>
+    
+    <content type="html"><![CDATA[<p>在es6中，类里面的方法，不允许直接使用this来指代实例去使用属性</p><p>你必须在构造函数中bind this或者使用箭头函数来代替函数声明，或者再调用时绑定this</p><p>或者你可以声明一个全局变量，在构造函数中将this赋值给这个全局变量</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在es6中，类里面的方法，不允许直接使用this来指代实例去使用属性&lt;/p&gt;
+&lt;p&gt;你必须在构造函数中bind this或者使用箭头函数来代替函数声明，或者再调用时绑定this&lt;/p&gt;
+&lt;p&gt;或者你可以声明一个全局变量，在构造函数中将this赋值给这个全局变量&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/react/dom/"/>
+    <id>http://www.ylioo.com/2018/04/02/react/dom/</id>
+    <published>2018-04-02T15:27:55.010Z</published>
+    <updated>2018-03-31T16:07:00.662Z</updated>
+    
+    <content type="html"><![CDATA[<p>react可以允许我们通过 ref 来定位一个组件。具体的做法是：<br>先给一个组件设置一个 ref=‘xxx’ 的属性，注意这个ref必须是全局唯一的。</p><p><input ref="‘city’"><br>然后就可以通过 this.refs.city 来访问这个组件。<br>但是请注意，这里拿到的只是虚拟DOM，而不是真实的DOM。<br>只有在render方法执行之后，并且react已经完成了DOM的更新，才能通过 this.refs.city.getDOMNode() 来拿到原生的DOM元素。</p><p>作者：隔壁陈叔叔<br>链接：<a href="https://www.jianshu.com/p/c401e417bd8a" target="_blank" rel="noopener">https://www.jianshu.com/p/c401e417bd8a</a><br>來源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;react可以允许我们通过 ref 来定位一个组件。具体的做法是：&lt;br&gt;先给一个组件设置一个 ref=‘xxx’ 的属性，注意这个ref必须是全局唯一的。&lt;/p&gt;
+&lt;p&gt;&lt;input ref=&quot;‘city’&quot;&gt;&lt;br&gt;然后就可以通过 this.refs.city 来访问这
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/react/begin/"/>
+    <id>http://www.ylioo.com/2018/04/02/react/begin/</id>
+    <published>2018-04-02T15:27:54.978Z</published>
+    <updated>2018-03-27T15:30:07.212Z</updated>
+    
+    <content type="html"><![CDATA[<p>组件和props</p><p>组件让你按需分割界面，可重用的块，思考将这些快分割；</p><p>组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素</p><p>这个简单的方式定义了一个组件，使用js的函数<br>function Welcome(props) {<br>  return </p><h1>Hello, {props.name}</h1>;<br>}<br>这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的properties）数据对象参数并且返回一个react元素。<br>我们称这样的组件为functional，因为他是字面上的js函数？<p></p><p><strong>渲染组件</strong></p><p>我们可以定义一个react元素代表传统的标签</p><p>const ele = <div>;</div></p><p>元素也可以代表用户自定义的组件</p><p>当react看见一个代表用户自定义组件的元素时，它会传入JSX属性到这个组件作为一个单一的对象，我们成这样的对象为props</p><p>ex：<br>    function Welcome(props) {<br>      return </p><h1>Hello, {props.name}</h1>;<br>    }<p></p><pre><code>const element = &lt;Welcome name=&quot;Sara&quot; /&gt;;ReactDOM.render(  element,  document.getElementById(&apos;root&apos;));</code></pre><p>他将会输出</p><h1>Hello, Sara</h1><p></p><p>让我们总结一下在这个例子中方式发生了什么：</p><ul><li>1，我们在React.Dom中使用了<welcome name="Sara">元素</welcome></li><li>2，react将{name: “Sara”}作为props传给Welcome组件</li><li>3，我们的Welcome组件返回<h1>Hello Sara</h1>结果</li><li>4，react dom匹配<h1>Hello Sara</h1>有效地更新DOM</li></ul><p>注：自定义组件首字母必须大写<br><small>当一个元素以一个小写的字母开始，它指向一个内建的组件，像<div> 或者 <span> 结果将会是一个字符串’div’ 或者 ‘span’,然后传给React.creactEalement，类型以一个大写字母开始，像<foo>，编译结果会是React.createElement(Foo),就爱那个会正确的返回一个定义的组件，或者从你的js文件中引入</foo></span></div></small></p><p>Composing Compoents(晓不得咋个翻译额，直接引用原文还更容易理解)<br>Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen: in React apps, all those are commonly expressed as components.</p><p>For example, we can create an App component that renders Welcome many times:</p><p>function Welcome(props) {<br>  return </p><h1>Hello, {props.name}</h1>;<br>}<p></p><p>function App() {<br>  return (<br>    <div><br>      <welcome name="Sara"><br>      <welcome name="Cahal"><br>      <welcome name="Edite"><br>    </welcome></welcome></welcome></div><br>  );<br>}</p><p>ReactDOM.render(<br>  <app>,<br>  document.getElementById(‘root’)<br>);</app></p><p>Extracting Components<br>Don’t be afraid to split components into smaller components.</p><p>For example, consider this Comment component:</p><p>function Comment(props) {<br>  return (<br>    <div classname="Comment"><br>      <div classname="UserInfo"><br>        <img classname="Avatar" src="{props.author.avatarUrl}" alt="{props.author.name}"><br>        <div classname="UserInfo-name"><br>          {props.author.name}<br>        </div><br>      </div><br>      <div classname="Comment-text"><br>        {props.text}<br>      </div><br>      <div classname="Comment-date"><br>        {formatDate(props.date)}<br>      </div><br>    </div><br>  );<br>}</p><p>它接收auther，text，和date作为props，描述可一个在社交媒体网站上的评论组件</p><p>改变这个组件可能会变得很棘手，因为它含有很多层的嵌套，而且它也很难复用在其他的parts。让我们从他上面分割一些组件下来。</p><p>首先我们分割头像组件</p><p>function Avatar(props) {<br>  return (<br>    <img classname="Avatar" src="{props.user.avatarUrl}" alt="{props.user.name}"></p><p>  );<br>}</p><p>头像组件并不需要知道他是要在一个组件内渲染，这也是为什么我们给一个更为广泛的name: user而不是author作为props</p><p>我们建议在组件中的name props在视图中有自己的重点，而不是考虑在上下文中它的使用</p><p>现在我们可以使用更小一点的组件<br>function Comment(props) {<br>  return (<br>    <div classname="Comment"><br>      <div classname="UserInfo"><br>        <avatar user="{props.author}"><br>        <div classname="UserInfo-name"><br>          {props.author.name}<br>        </div><br>      </avatar></div><br>      <div classname="Comment-text"><br>        {props.text}<br>      </div><br>      <div classname="Comment-date"><br>        {formatDate(props.date)}<br>      </div><br>    </div><br>  );<br>}</p><p>接下来我们分割一个userInfo</p><p>组件渲染Avatar接下来是user‘s name<br>function UserInfo(props) {<br>  return (<br>    <div classname="UserInfo"><br>      <avatar user="{props.user}"><br>      <div classname="UserInfo-name"><br>        {props.user.name}<br>      </div><br>    </avatar></div><br>  );<br>}</p><p>这让我们简单的组件更进一步<br>function Comment(props) {<br>  return (<br>    <div classname="Comment"><br>      <userinfo user="{props.author}"><br>      <div classname="Comment-text"><br>        {props.text}<br>      </div><br>      <div classname="Comment-date"><br>        {formatDate(props.date)}<br>      </div><br>    </userinfo></div><br>  );<br>}</p><p>组件分割也许在刚开始看起来像grunt的工作，但是有一个palette装了复用组件可以在大型app中使用。一个简单的规则是如果你的一部分UI使用了几次(Button, Panel, Avatar)，或者它自己足够复杂（App, FeedStory, Comment），这是一个好的复用组件的标准</p><p>props和只读</p><p>无论你是否使用function or class定义组件，他必须不能够被修改它自己的props，考虑这个求和函数<br>function sum(a, b) {<br>  return a + b;<br>}</p><p>像这样的函数被叫做“pure”，因为他们并不会试图去修改他们的输入，而且当输入相同时总是返回相同的结果。</p><p>作为对比，这个函数不是“pure”的，因为它会改变它自己的输入</p><p>react是很灵活的，但是他有一个单一的严格规则：</p><p>所有的组件都必须像pure函数以尊重他们的props</p><p><strong>state and Lifecycle</strong></p><p>到目前为止我们学习了如何更新UI</p><p>我们使用ReactDOM.render()来改变渲染的输出</p><p>function tick() {<br>  const element = (<br>    <div><br>      <h1>Hello, world!</h1><br>      <h2>It is {new Date().toLocaleTimeString()}.</h2><br>    </div><br>  );<br>  ReactDOM.render(<br>    element,<br>    document.getElementById(‘root’)<br>  );<br>}</p><p>setInterval(tick, 1000);</p><p>在这一章中，我们将会学习如何制作一个时钟组件，他是复用的而且封装性的，它会建立自己的计数器且每秒都会更新</p><p>我们先封装一下他是什么样的</p><p>function Clock(props) {<br>  return (<br>    <div><br>      <h1>Hello, world!</h1><br>      <h2>It is {props.date.toLocaleTimeString()}.</h2><br>    </div><br>  );<br>}</p><p>function tick() {<br>  ReactDOM.render(<br>    <clock date="{new" date()}="">,<br>    document.getElementById(‘root’)<br>  );<br>}</clock></p><p>setInterval(tick, 1000);</p><p>无论怎样，它却少了一个关键的需求：事实上Clock建立一个计时器且每秒自动更新UI应该是一个细节上的实现。</p><p>理想情况下我们想只写一次然后它自己更新：<br>ReactDOM.render(<br>  <clock>,<br>  document.getElementById(‘root’)<br>);</clock></p><p>为了实现这个，我们需要向组件中添加“state”，</p><p>state比props更小，但是他是私有的，而且组件对他有完全控制权</p><p>我们曾经注意到组件作为类被定义时有一些传统的特性，本地的state正是如此： 一个只能被类使用的变量</p><p>简单概括：Converting a Function to a Class<br>You can convert a functional component like Clock to a class in five steps:</p><p>Create an ES6 class, with the same name, that extends React.Component.</p><p>Add a single empty method to it called render().</p><p>Move the body of the function into the render() method.</p><p>Replace props with this.props in the render() body.</p><p>Delete the remaining empty function declaration.</p><p>class Clock extends React.Component {<br>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.props.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}</p><p>现在clock组件作为类被定义，而不是函数</p><p>这使得我们可以使用附加的局部state和生命周期特性</p><p><strong>Adding Local State to a Class</strong></p><p>我们将会使用三个步骤从props中移除date到state中：<br>1，在render()函数中使用this.state.date替换this.props.date,<br>class Clock extends React.Component {<br>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.state.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}<br>2, 添加一个类的构造器并给this.state初始化<br>class Clock extends React.Component {<br>  constructor(props) {<br>    super(props);<br>    this.state = {date: new Date()};<br>  }</p><p>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.state.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}<br>注意我们是如何传入props到父构造器中的</p><p>类组件应该总是向父组件传入props</p><p>在<clock>元素中移除移除dete props<br>ReactDOM.render(<br>  <clock>,<br>  document.getElementById(‘root’)<br>);</clock></clock></p><p>The result looks like this:</p><p>class Clock extends React.Component {<br>  constructor(props) {<br>    super(props);<br>    this.state = {date: new Date()};<br>  }</p><p>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.state.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}</p><p>ReactDOM.render(<br>  <clock>,<br>  document.getElementById(‘root’)<br>);</clock></p><p><strong>Adding Lifecycle Methods to a Class</strong></p><p>In applications with many components, it’s very important to free up resources taken by the components when they are destroyed.</p><p>We want to set up a timer whenever the Clock is rendered to the DOM for the first time. This is called “mounting” in React.</p><p>We also want to clear that timer whenever the DOM produced by the Clock is removed. This is called “unmounting” in React.</p><p>We can declare special methods on the component class to run some code when a component mounts and unmounts:</p><p>class Clock extends React.Component {<br>  constructor(props) {<br>    super(props);<br>    this.state = {date: new Date()};<br>  }</p><p>  componentDidMount() {</p><p>  }</p><p>  componentWillUnmount() {</p><p>  }</p><p>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.state.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}<br>These methods are called “lifecycle hooks”.</p><p>The componentDidMount() hook runs after the component output has been rendered to the DOM. This is a good place to set up a timer:</p><p>  componentDidMount() {<br>    this.timerID = setInterval(<br>      () =&gt; this.tick(),<br>      1000<br>    );<br>  }</p><p>注意到我们是将timeID保存到this上的</p><p>当this.props被react建立且this.state有一个特俗的意义，如果你需要存储一些不会显示在试图中的数据可以自由的手动添加字段到类中</p><p>不在render中使用的数据也不应该出现在state中</p><p>我们将会拆除计时器当componentWillUnmount被触发时，<br> componentWillUnmount() {<br>    clearInterval(this.timerID);<br>  }</p><p>最终我们会实现一个叫做tick的方法，这个方法让组件每秒更新一次</p><p>他将会使用this.setState()指定组件的局部state更新</p><p>class Clock extends React.Component {<br>  constructor(props) {<br>    super(props);<br>    this.state = {date: new Date()};<br>  }</p><p>  componentDidMount() {<br>    this.timerID = setInterval(<br>      () =&gt; this.tick(),<br>      1000<br>    );<br>  }</p><p>  componentWillUnmount() {<br>    clearInterval(this.timerID);<br>  }</p><p>  tick() {<br>    this.setState({<br>      date: new Date()<br>    });<br>  }</p><p>  render() {<br>    return (<br>      <div><br>        <h1>Hello, world!</h1><br>        <h2>It is {this.state.date.toLocaleTimeString()}.</h2><br>      </div><br>    );<br>  }<br>}</p><p>ReactDOM.render(<br>  <clock>,<br>  document.getElementById(‘root’)<br>);</clock></p><p>现在它能够正常工作了</p><p>让我们简单总结一下是怎么回事并排序事件的触发顺序</p><p>1，当<clock>组件被传入ReactDOM.render()时，react触发了Clock组件的构造函数，自从Clock需要显示当前事件，他使用一个包含时间的对象初始化this.state，我们将会在接下来更新他。<br>2，接着react使用了组件的render函数，这让react了解到那些数据应该在屏幕上显示，react下一步会匹配render的输出更新dom<br>3，当Clock的输出被内嵌到dom中，react触发componentDidMount函数，再此函数中Clock要求浏览器建立一个计时器每秒呼叫组件的tick方法<br>4，浏览器每秒呼叫tick函数，在函数中Clock计划使用setState改变当前时间去更新视图，感谢setState，react才能知道state被改变，接着使用render函数去更新那些应该在屏幕上显示的数据，这时，this.state.date将会不同于render函数中的数据，所以render函数的输出将会更新时间。<br>5，如果组件一旦从dom中移除，react将会运行componentWillUnmount函数，所以这个计时器也被停止</clock></p><p>事件处理</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;组件和props&lt;/p&gt;
+&lt;p&gt;组件让你按需分割界面，可重用的块，思考将这些快分割；&lt;/p&gt;
+&lt;p&gt;组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素&lt;/p&gt;
+&lt;p&gt;这个简单的方式定义了一个组件，使用js的函数&lt;br&gt;funct
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/npm/note/"/>
+    <id>http://www.ylioo.com/2018/04/02/npm/note/</id>
+    <published>2018-04-02T15:27:54.881Z</published>
+    <updated>2018-03-19T08:34:23.896Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>main</strong></p><p>main字段指定了模块的入口程序文件。就是说，如果你的模块名叫”foo”，用户安装了它，并且调用了 require(“foo”)，则这个main字段指定的模块的导出对象会被返回。</p><p>这应该是一个相对于包根目录的模块标识。</p><p>对于大部分模块来说，main字段除了指定一个主入口文件以外没什么其他用处了。</p><p><strong>name</strong><small> ：npm包的名称</small></p><p>name and version are most important fields. they are necessary, if your npm package not appoints those two fields, it will not be installed. name and version are assumed a only identifying’s combination.包内容的更改和包版本的更改是同步的。</p><p><strong>几个规则：</strong></p><ul><li>1.name的长度必须小于等于214个字符。</li><li><ol start="2"><li>name不能以”.”(点)或者”_”(下划线)开头。</li></ol></li><li><ol start="3"><li>name中不能包含大写字母。</li></ol></li><li><ol start="4"><li>name最终将被用作URL的一部分、命令行的参数和文件夹名。因此，name不能含有非URL安全的字符。</li></ol></li></ul><p><strong>几个建议：</strong></p><ul><li><ol><li>不要使用已存在的name作为包名。</li></ol></li><li><ol start="2"><li>不要在name中使用”js”和”node”，这会假定这是js文件，一旦你写一个package.json文件，你就可以在”engines”字段中指定解释器引擎。</li></ol></li><li><ol start="3"><li>name字段可能会被作为传输传递给require()函数，因此它最好是简短的、自描述的。</li></ol></li><li><ol start="4"><li>你可能会需要在深入开发一个包之前先检查npm的registry来确认某个name是否被使用过，可以参考<a href="https://www.npmjs.com/。" target="_blank" rel="noopener">https://www.npmjs.com/。</a></li></ol></li><li>一个name可以用scope来指定一个前缀，比如@myorg/mypackage，可以参考npm-scope。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;main&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;main字段指定了模块的入口程序文件。就是说，如果你的模块名叫”foo”，用户安装了它，并且调用了 require(“foo”)，则这个main字段指定的模块的导出对象会被返回。&lt;/p&gt;
+&lt;p&gt;这应该是一个相对于包根
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/nodejs/npminstall/"/>
+    <id>http://www.ylioo.com/2018/04/02/nodejs/npminstall/</id>
+    <published>2018-04-02T15:27:54.795Z</published>
+    <updated>2018-03-18T03:39:52.857Z</updated>
+    
+    <content type="html"><![CDATA[<p>npm install –prefix <directory>    // 安装到制定目录</directory></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;npm install –prefix &lt;directory&gt;    // 安装到制定目录&lt;/directory&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/math/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/"/>
+    <id>http://www.ylioo.com/2018/04/02/math/微分方程/</id>
+    <published>2018-04-02T15:27:54.699Z</published>
+    <updated>2018-03-13T15:17:42.726Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>微分方程的基本概念</strong></p><p><strong>def:</strong><br>    含有未知函数的倒数或微分的方程（常微分方程）</p><p>方程的阶数：<br>    方程中未知数的最高阶导数的阶数</p><p>通解：<br>    如果微分方程中含有任意常数，and任意常数的个数与微分方程的阶数相等</p><p>特解：<br>    确定了通解中的任意常数</p><p>n阶微分方程： F(x,y,y’,y’’,…,y<sup>(n)</sup>)</p><p>微分方程的初值问题</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.imgur.com/QgJ2WXd.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><p>*隐函数求导：    </p><ul><li>2xy - 2y<sup>2</sup> = c</li><li>2y + 2xy’ - 2yy’ = 0*</li></ul><p>可分离变量的微分方程</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.imgur.com/dgHeFOT.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><p>beacuse：a = ln e<sup>a</sup></p><p>so:        x<sup>2</sup> = ln e<sup>x<sup>2</sup></sup></p><p>凑微分法</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;微分方程的基本概念&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;def:&lt;/strong&gt;&lt;br&gt;    含有未知函数的倒数或微分的方程（常微分方程）&lt;/p&gt;
+&lt;p&gt;方程的阶数：&lt;br&gt;    方程中未知数的最高阶导数的阶数&lt;/p&gt;
+&lt;p&gt;通解：&lt;br&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/linux/vim/"/>
+    <id>http://www.ylioo.com/2018/04/02/linux/vim/</id>
+    <published>2018-04-02T15:27:54.624Z</published>
+    <updated>2018-03-24T07:50:12.461Z</updated>
+    
+    <content type="html"><![CDATA[<p>进入 vim：<br>    vim <filename></filename></p><p>insert:<br>    输入: i</p><p>save and exit:<br>    if you are in insert mode,first click “esc”,then input “:wq”<br>    (w: write;<br>    q: quit;)<br>    end input “enter”</p><pre><code>other ways: input &quot;x: ( = wq);            click &quot;shift + zz&quot;</code></pre><p>watch only:<br>    cat <filename></filename></p><p>normal quit:<br>    前提是没有改变过内容<br>    first click “esc”,then input “:q”</p><p>quit without save:<br>    first click “esc”,then input “:q!”</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;进入 vim：&lt;br&gt;    vim &lt;filename&gt;&lt;/filename&gt;&lt;/p&gt;
+&lt;p&gt;insert:&lt;br&gt;    输入: i&lt;/p&gt;
+&lt;p&gt;save and exit:&lt;br&gt;    if you are in insert mode,first click “
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/GO/variable/"/>
+    <id>http://www.ylioo.com/2018/04/02/GO/variable/</id>
+    <published>2018-04-02T15:27:54.547Z</published>
+    <updated>2018-03-29T09:58:30.406Z</updated>
+    
+    <content type="html"><![CDATA[<p>var variable_a type</p><p>var variable_b, c, d type</p><p>var variable_e type = value</p><p>var name1, name2, name3 type = v1, v2, v3</p><p>/<em><br>    defined 3 variables, they are 分别初始化为相应的值<br>    然后Go会根据其相应值得类型来帮助你初始化它们</em>/<br>var namea, nameb, namec = v1, v2, v3</p><p>name1, name2, name3 := v1, v2, v3</p><p>:= 这个符号直接取代了var和type，这种形式叫做简短声明。不过他只能在函数内部使用；在函数外部无法通过编译，所以一般用var来声明全局变量。</p><p>_是一个特俗的变量名，任何赋值给它的值都会被丢弃。</p><p>/<em><br>    我们将值35赋给b，并丢弃34</em>/<br>_, b := 34, 35</p><p>Go对于已经声明但是未使用的变量会在编译阶段报错</p><p><strong>常量：</strong></p><pre><code>所谓常量，也就是在程序编译阶段就确定下来的值，而程序在运行时无法改变该值，常量可被定义为数值，布尔值或字符串等类型。const Pi = 3.1415926const Pi float32 = 3.1415926Go常量和一般的编程语言不同的是，可以指定相当多的小数位数（例如200位），若指定给float32自动缩短为32bit，、指定给float64缩短为64bit</code></pre><p><strong>内置基础类型：</strong><br>    Boolean<br>        在GO中，布尔值得类型为bool，值是true或false。 默认为false；</p><pre><code>数值类型：    整数类型有无符号和带符号两种。Go同时支持int和uint，这两种类型的长度相同，但具体长度取决于不同编译器的实现。    Go也有直接定义好的位数类型：rune, int8, int16, int32, int64和byte, uint8, uint16, uint32, uint64.其中rune是int32的别称，byte是uint8的别称。        需要注意的是，这些类型的变量之间不允许互相赋值或操作，不然会在编译时引起编译器保存        如下的代码会引起报错 invalid operation : a + b (mismatched types int8 and int32)字符串：    字符串是由一对双引号&quot;&quot; ro 反引号 `` 括起来定义，他的类型是string    在GO中字符串是不可变的，例如下面的代码编译时会报错    var s string = &quot;awed&quot;    s[0] = &apos;c&apos;    应采用以下的方法修改：        s := &quot;hello&quot;        c := []byte(s)    (注： byte是字节型数据， string是字符串型数据。字符串类型的变量，字符码为0到255，可以声明变长和定长字符串。字节型，变量包含二进制数时，使用字节型。在转换格式期间，最好用字节型变量存储二进制数)</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;var variable_a type&lt;/p&gt;
+&lt;p&gt;var variable_b, c, d type&lt;/p&gt;
+&lt;p&gt;var variable_e type = value&lt;/p&gt;
+&lt;p&gt;var name1, name2, name3 type = v1, v2, v3&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/GO/goDirective/"/>
+    <id>http://www.ylioo.com/2018/04/02/GO/goDirective/</id>
+    <published>2018-04-02T15:27:54.489Z</published>
+    <updated>2018-03-17T10:00:16.806Z</updated>
+    
+    <content type="html"><![CDATA[<div style="color:green;font-size:24px"><br><br><p><span style="width:120px;display: inline-block">build</span>compile packages and dependencies</p><br><br><p><span style="width:120px;display: inline-block">clean</span>remove object files</p><br><br><p><span style="width:120px;display: inline-block">env</span>print Go environment infomation</p><br><br><p><span style="width:120px;display: inline-block">fix</span>run go tool fix on package</p><br><br><p><span style="width:120px;display: inline-block">fmt</span>run gofmt on package sourece</p><br><br><p><span style="width:120px;display: inline-block">get</span>download and install packages and dependencies</p><br><br><p><span style="width:120px;display: inline-block">install</span>compile and install packages and dependencies</p><br><br><p><span style="width:120px;display: inline-block">list</span>list packages</p><br><br><p><span style="width:120px;display: inline-block">run</span>compile and run Go program</p><br><br><p><span style="width:120px;display: inline-block">test</span>test packages</p><br><br><p><span style="width:120px;display: inline-block">tool</span>run specified go tool</p><br><br><p><span style="width:120px;display: inline-block">version</span>print Go version</p><br><br><p><span style="width:120px;display: inline-block">vet</span>run go tool vet on packages</p><br></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div style=&quot;color:green;font-size:24px&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;span style=&quot;width:120px;display: inline-block&quot;&gt;build&lt;/span&gt;compile packages and dependen
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/GO/goConfigure/"/>
+    <id>http://www.ylioo.com/2018/04/02/GO/goConfigure/</id>
+    <published>2018-04-02T15:27:54.457Z</published>
+    <updated>2018-03-27T09:39:28.992Z</updated>
+    
+    <content type="html"><![CDATA[<p>windows下安装go</p><p>编辑器visual stdio code</p><p>保存时提示缺少语法检测extension</p><p>但是安装时提示失败（所有扩展安装失败）</p><p>我的go安装在d:go</p><p>首先在src/golang.org/x/tools下<br>git clone <a href="https://github.com/golang/tools.git" target="_blank" rel="noopener">https://github.com/golang/tools.git</a></p><p>这样大部分extension可以安装完成<br>其余的extension可以根据vscode提示去github上依次git clone到相应文件夹，<br>再在bin/下<br>go install “../<path></path>“ 就行了</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;windows下安装go&lt;/p&gt;
+&lt;p&gt;编辑器visual stdio code&lt;/p&gt;
+&lt;p&gt;保存时提示缺少语法检测extension&lt;/p&gt;
+&lt;p&gt;但是安装时提示失败（所有扩展安装失败）&lt;/p&gt;
+&lt;p&gt;我的go安装在d:go&lt;/p&gt;
+&lt;p&gt;首先在src/golang.o
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/GO/compire/"/>
+    <id>http://www.ylioo.com/2018/04/02/GO/compire/</id>
+    <published>2018-04-02T15:27:54.455Z</published>
+    <updated>2018-03-17T09:33:14.296Z</updated>
+    
+    <content type="html"><![CDATA[<p>go语言的format extension会在保存时提示语法或者其他的错误/warning<br>其中每个函数都必须写上comment<br>like this<br>    <code><br>    // [function name] : here you tell us what Salutation is<br><br>    // Printer : what is this?<br><br>    // Greet : describe what this function does<br><br>    // CreateMessage : describe what this function does<br><br>    </code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;go语言的format extension会在保存时提示语法或者其他的错误/warning&lt;br&gt;其中每个函数都必须写上comment&lt;br&gt;like this&lt;br&gt;    &lt;code&gt;&lt;br&gt;    // [function name] : here you tell 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/GO/build/"/>
+    <id>http://www.ylioo.com/2018/04/02/GO/build/</id>
+    <published>2018-04-02T15:27:54.420Z</published>
+    <updated>2018-03-17T09:44:07.765Z</updated>
+    
+    <content type="html"><![CDATA[<p>编译完代码后可以使用go install <filename>生成.a的文件</filename></p><p>如何使用呢？<br>    我们可以在另一个程序中使用import(<br>        “path”<br>    )来调用；</p><p>最后再使用go build 生产.exe的可执行文件</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;编译完代码后可以使用go install &lt;filename&gt;生成.a的文件&lt;/filename&gt;&lt;/p&gt;
+&lt;p&gt;如何使用呢？&lt;br&gt;    我们可以在另一个程序中使用import(&lt;br&gt;        “path”&lt;br&gt;    )来调用；&lt;/p&gt;
+&lt;p&gt;最后再使用go
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.ylioo.com/2018/04/02/data%20struct/1/"/>
+    <id>http://www.ylioo.com/2018/04/02/data struct/1/</id>
+    <published>2018-04-02T15:27:54.324Z</published>
+    <updated>2018-03-18T14:06:48.784Z</updated>
+    
+    <content type="html"><![CDATA[<p>数据：指能够被计算机识别，存储额加工处理的信息载体。<br>数据元素：就是数据的基本单位，在某些情况下，数据元素也成为元素，节点，顶点，记录。数据元素有时也可以由若干数据项组成。<br>数据结构：指的是数据之间的相互关系，即数据的组织形式。</p><p>数据结构一般包括以下三方面：</p><p>1.数据元素之间的逻辑关系，也称数据的逻辑结构：<br>    数据的逻辑结构是从逻辑关系上描述数据，与数据的存储无关，是独立于i计算机的。数据的逻辑结构可以看作是从具体问题抽象出来的数学模型。<br>2.数据元素机及其关系在计算机存储器内的表示称数据的存储结构；<br>3.数据的运算，即对数据施加的操作：<br>    数据的运算定义在数据的逻辑结构上，每种逻辑结构都有一个运算的集合。最常用的检索，插入，删除，更新，排序等运算实际上只是在抽象的数据上施加的一系列抽象的操作。</p><p>逻辑结构：<br>    表中每一行是一个数据元素（or record， node），由学好，姓名等数据组成。数据元素之间的逻辑关系是：对表中任一节点与他前面相邻且在它前面的节点称直接前趋最多只有一个；</p><p>存储结构：<br>    该表的存储结构指的是用计算机语言如何表示节点之间的这种关系，即表中的节点时顺序邻接地存储在一片连续的单元之中，还是用指针将这些节点连接在一起？</p><p>数据的logic分类：<br>    linear struct： logic characteristic is: if struct is not empty, 则if only if one start node and end node,and all of nodes most 只有one直接前趋andone直接后继。线性table, stack, queue, 串等都是线性结构。</p><pre><code>非线性接结构： 逻辑特征是： 一个节点可能有多个直接前趋和直接后趋。array, 广义表，tree and graph等数据结构都是非线性结构</code></pre><p>数据的四种基本存储方法：<br>    1，顺序存储方法；<br>    2，连接存储方法；<br>    3，索引存储方法；<br>    4，散列存储方法;</p><p>按值是否可以分解，可将数据分为两类：<br>    1，原子类型<br>    2，结构类型</p><p>抽象数据类型（ADT）：<br>    是指抽象数据的组织和与之相关的操作。可以看作是数据的逻辑结构及其在逻辑结构上定义的操作。抽象数据类型可以看作是描述问题的模型，他独立于具体实现。它的优点是将数据可操作封装在一起，使得用户程序只能通过在ADT中定义的某些操作来访问其中的数据，从而实现信息隐藏。<br>    ADI和class的概念实际上反映了程序或软件设计的两次抽象：ADT相当于实在概念层（抽象层）上描述问题，而类相当于是在实现层上描述问题。不采用ADT的形式来描述数据结构</p><p>计算机处理问题的分类：<br>    1：数值计算问题；<br>    2：非数值问题</p><p>算法+数据结构 = 程序</p><p>数据结构是数据的逻辑结构和存储结构，算法是对数据运算的描述</p><p>算法（Algorithm）<br>def:非形式的说，算法是任意一个良定义的计算过程它以一个或多个值作为输入，并产生一个或多个值作为输出；<br>    1，一个算法可以被认为是用来解决一个计算问题的工具<br>    2，一个算法是将一系列输入转化为输出的计算步骤</p><p>Algorithm’s description: one algorithm can used by nature language, computer language ro another language to description, only demand is this description must descript calculate process in accurate.描述算法最合适的语言是介于计算机语言与自然语言之间的伪语言</p><p>算法的时间性能分析<br>（1）算法所耗费的时间=算法中每条语句的执行时间之和<br>每条语句的执行时间=语句的执行次数(即频度))×语句执行一次所需时间的乘积。</p><p>算法求解问题的输入量称为问题的规模(Size),用一个整数表示。</p><p>一个算法的时间复杂度(也称时间复杂性)T(n)是该算法的时间耗费，是该算法所求解问题规模n 的函数。当问题的规模n 趋向无穷大时，<br>时间复杂度T(n)的数量级(阶)称为算法的渐进时间复杂度。<br>【例3】算法MatrixMultidy 的时间复杂度T(n)如(1.1)式所示，当n 趋向无穷大时，显然有<br>当n 充分大时，T(n)和n 3 之比是一个不等于零的常数。即T(n)和n 3 是同阶的，或者说T(n)和n 3 的数量级相同。记作T(n)=O(n 3)是算<br>法MatrixMultiply 的渐近时间复杂度。</p><p>当有若干个循环语句时，算法的时间复杂度由嵌套层数最多的循环语句中最内层语句的频度 f(n)决定的。（因为当n足够大时，最内层的时间复杂度相比于外层的高阶无穷大）</p><p>平均时间复杂度是指所有可能的输入实例均以等概率出现的情况下，算法的期望运行时间。</p><p>一个算法的空间复杂度 S(n)定义为该算法所耗费的存储空间，它也是问题规模 n 的函数。渐近空间复杂度也常常简称为空间复杂度。<br>算法的时间复杂度和空间复杂度合称为算法的复杂度。</p><p>线性表的逻辑定义<br>线性表是由n 个数据元素（结点）a1，a2，…，an 组成的有限序列。<br>线性表的逻辑结构特征（对于非空的线性表:）<br>①仅有一个开始结点a1，没有直接前趋，仅有一个直接后继a2；<br>②仅有一个终结结点an，没有直接后继，仅有一个直接前趋an-1；<br>③其余的内部结点ai 都有且仅有一个直接前趋和一个直接后继。<br>常见的线性表的基本运算<br>1． InitList（L） ：构造一个空的线性表 L，即表的初始化。<br>2． ListLength（L） ：求线性表 L 中的结点个数，即求表长。<br>3． GetNode（L，i） ：取线性表L 中的第i 个结点，1≤i≤ListLength(L)<br>4．LocateNode（L，x）：在 L 中查找值为 x 的结点,并返回 x 在 L 中的位置。若 L 中没结点的值为 x，返回个特殊值表示查找失败。<br>5．InsertList（L，x，i）：在表L 的第 i个位置上插入一个值 x<br>6． DeleteList（L，i） ：删除线性表 L 的第i 个结点</p><p>void InsertList(SeqList *L，DataType x，int i)<br>{//将新结点x 插入L 所指的顺序表的第i 个结点ai 的位置上<br>int j;<br>if (i&lt;1||i&gt;L-&gt;length+1)<br>Error(“position error”);//非法位置，退出运行<br>if (L-&gt;length&gt;=ListSize)<br>Error(“overflow”); //表空间溢出，退出运行<br>for(j=L-&gt;length-1;j&gt;=i-1;j–)<br>L-&gt;data[j+1]=L-&gt;data[j];//结点后移<br>L-&gt;data[i-1]=x; //插入x<br>L-&gt;Length++; //表长加1 }</p><p>递归是一种强有力的数学工具，他可以使问题的描述和求解变得简洁和清晰。递归算法常常比非递归算法更容易设计，当问题本身所涉及的数据结构是递归定义时，使递归算法特别合适。</p><ul><li>若在一个函数，过程或者数据结构定义的内部，直接（或间接）出现定义本身的应用，则称他们是递归的，或者递归定义的。</li><li>递归定义的设计步骤<br>  step1： 将规模较大的问题分解成一个或多个规模更小，但更具有类似元问题特性的子问题。即较大的问题递归地用较小的子问题来描述，解原文题的方法同样可以用来解决子问题。<br>  step2： 确定一个或多个无需分解，可直接求解的最小子问题（递归的终止条件）</li></ul><p>stack 在递归算法的内部实现中所起到的作用。<br>1.调用函数时：系统将会为调用者构造一个由参数table和return addr组成的activation record，并将其压入由系统提供的运行时刻stack的栈顶，然后将程序的控制权转移到被调用的函数。若函数存在局部变量，则在运行时刻栈的2栈顶也要为其分配相应的空间。因此，活动记录和这些局部变量形成了一个可供被调用函数使用的活动结构。参数表的内容为实参返回地址是函数调用语句的下一指令的位置。<br>2.被调函数执行完毕时：系统将运行时刻栈栈顶的活动结构退栈，并根据退栈的活动结构中所保存的返回地址将程序的控制权转移给调用者继续执行。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;数据：指能够被计算机识别，存储额加工处理的信息载体。&lt;br&gt;数据元素：就是数据的基本单位，在某些情况下，数据元素也成为元素，节点，顶点，记录。数据元素有时也可以由若干数据项组成。&lt;br&gt;数据结构：指的是数据之间的相互关系，即数据的组织形式。&lt;/p&gt;
+&lt;p&gt;数据结构一般包括以
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://www.ylioo.com/2018/04/02/hello-world/"/>
+    <id>http://www.ylioo.com/2018/04/02/hello-world/</id>
+    <published>2018-04-02T14:56:37.026Z</published>
+    <updated>2018-04-02T13:44:54.757Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
