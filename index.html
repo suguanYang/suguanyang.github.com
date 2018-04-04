@@ -149,13 +149,13 @@ ReactDOM.render(
   element,
   document.getElementById(&apos;root&apos;)
 );
-</code></pre><p>他将会输出</p><h1>Hello, Sara</h1><p></p>
+</code></pre><p>他将会输出Hello, Sara</p>
 <p>让我们总结一下在这个例子中方式发生了什么：</p>
 <ul>
 <li>1，我们在React.Dom中使用了<welcome name="Sara">元素</welcome></li>
 <li>2，react将{name: “Sara”}作为props传给Welcome组件</li>
 <li>3，我们的Welcome组件返回<h1>Hello Sara</h1>结果</li>
-<li>4，react dom匹配<h1>Hello Sara</h1>有效地更新DOM</li>
+<li>4，react dom匹配Hello Sara有效地更新DOM</li>
 </ul>
 <p>注：自定义组件首字母必须大写<br><small>当一个元素以一个小写的字母开始，它指向一个内建的组件，像<div> 或者 <span> 结果将会是一个字符串’div’ 或者 ‘span’,然后传给React.creactEalement，类型以一个大写字母开始，像<foo>，编译结果会是React.createElement(Foo),就爱那个会正确的返回一个定义的组件，或者从你的js文件中引入</foo></span></div></small></p>
 <p>Composing Compoents(晓不得咋个翻译额，直接引用原文还更容易理解)<br>Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen: in React apps, all those are commonly expressed as components.</p>
@@ -166,11 +166,11 @@ ReactDOM.render(
 
 function App() {
   return (
-&lt;div&gt;
-  &lt;Welcome name=&quot;Sara&quot; /&gt;
-  &lt;Welcome name=&quot;Cahal&quot; /&gt;
-  &lt;Welcome name=&quot;Edite&quot; /&gt;
-&lt;/div&gt;
+    &lt;div&gt;
+      &lt;Welcome name=&quot;Sara&quot; /&gt;
+      &lt;Welcome name=&quot;Cahal&quot; /&gt;
+      &lt;Welcome name=&quot;Edite&quot; /&gt;
+    &lt;/div&gt;
   );
 }
 
