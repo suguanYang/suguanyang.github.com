@@ -9,7 +9,7 @@
   <title>react | blog</title>
   <meta name="author" content="suguanyang">
   
-  <meta name="description" content="react">
+  <meta name="description" content="bascal react">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -112,14 +112,16 @@
 	<div class="mypage">		
 	  
 		 <div class="alert alert-success description">
-			<i class="fa fa-info-circle"></i> react
+			<i class="fa fa-info-circle"></i> bascal react
 		 </div> <!-- alert -->
 	  		
 
 	  <p><strong>组件和props</strong></p>
 <p>组件让你按需分割界面，可重用的块，思考将这些快分割；</p>
 <p>组件的概念就像js中的函数，它们可以接受任意的参数（称为props）返回应该显示的react元素</p>
-<p>这个简单的方式定义了一个组件，使用js的函数<br>function Welcome(props) {<br>  return </p><h1>Hello, {props.name}</h1>;<br>}<br>这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的properties）数据对象参数并且返回一个react元素。<br>我们称这样的组件为functional，因为他是字面上的js函数？<p></p>
+<p>这个简单的方式定义了一个组件，使用js的函数<br>    <code>function Welcome(props) {
+      return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+    }</code><br>这个函数是一个有效的react组件，因为他接受了一个单一的props（标准的properties）数据对象参数并且返回一个react元素。<br>我们称这样的组件为functional，因为他是字面上的js函数？</p>
 <p><strong>渲染组件</strong></p>
 <p>我们可以定义一个react元素代表传统的标签</p>
 <pre><code>const ele = &lt;div /&gt;;
@@ -158,28 +160,32 @@ function App() {
 &lt;/div&gt;
   );
 }
-</code></pre><p>ReactDOM.render(<br>  <app>,<br>  document.getElementById(‘root’)<br>);</app></p>
-<p>Extracting Components<br>Don’t be afraid to split components into smaller components.</p>
+
+ReactDOM.render(
+  &lt;App /&gt;,
+  document.getElementById(&apos;root&apos;)
+);
+</code></pre><p>Extracting Components<br>Don’t be afraid to split components into smaller components.</p>
 <p>For example, consider this Comment component:</p>
 <pre><code>function Comment(props) {
   return (
-&lt;div className=&quot;Comment&quot;&gt;
-  &lt;div className=&quot;UserInfo&quot;&gt;
-&lt;img className=&quot;Avatar&quot;
-  src={props.author.avatarUrl}
-  alt={props.author.name}
-/&gt;
-&lt;div className=&quot;UserInfo-name&quot;&gt;
-  {props.author.name}
-&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div className=&quot;Comment-text&quot;&gt;
-{props.text}
-  &lt;/div&gt;
-  &lt;div className=&quot;Comment-date&quot;&gt;
-{formatDate(props.date)}
-  &lt;/div&gt;
-&lt;/div&gt;
+    &lt;div className=&quot;Comment&quot;&gt;
+      &lt;div className=&quot;UserInfo&quot;&gt;
+        &lt;img className=&quot;Avatar&quot;
+          src={props.author.avatarUrl}
+          alt={props.author.name}
+        /&gt;
+        &lt;div className=&quot;UserInfo-name&quot;&gt;
+          {props.author.name}
+        &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;div className=&quot;Comment-text&quot;&gt;
+        {props.text}
+      &lt;/div&gt;
+      &lt;div className=&quot;Comment-date&quot;&gt;
+        {formatDate(props.date)}
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 }
 </code></pre><p>它接收auther，text，和date作为props，描述可一个在社交媒体网站上的评论组件</p>
@@ -187,16 +193,15 @@ function App() {
 <p>首先我们分割头像组件</p>
 <pre><code>function Avatar(props) {
   return (
-&lt;img className=&quot;Avatar&quot;
-  src={props.user.avatarUrl}
-  alt={props.user.name}
-/&gt;
-
+    &lt;img className=&quot;Avatar&quot;
+      src={props.user.avatarUrl}
+      alt={props.user.name}
+    /&gt;
   );
 }
 </code></pre><p>头像组件并不需要知道他是要在一个组件内渲染，这也是为什么我们给一个更为广泛的name: user而不是author作为props</p>
 <p>我们建议在组件中的name props在视图中有自己的重点，而不是考虑在上下文中它的使用</p>
-<p>现在我们可以使用更小一点的组件<br>    function Comment(props) {<br>      return (<br>        <div classname="Comment"><br>          <div classname="UserInfo"><br>        <avatar user="{props.author}"><br>        <div classname="UserInfo-name"><br>          {props.author.name}<br>        </div><br>          </avatar></div><br>          <div classname="Comment-text"><br>        {props.text}<br>          </div><br>          <div classname="Comment-date"><br>        {formatDate(props.date)}<br>          </div><br>        </div><br>      );<br>    }</p>
+<p>现在我们可以使用更小一点的组件<br>    function Comment(props) {<br>      return (<br>        <div classname="Comment"><br>          <div classname="UserInfo"><br>            <avatar user="{props.author}"><br>            <div classname="UserInfo-name"><br>              {props.author.name}<br>            </div><br>              </avatar></div><br>              <div classname="Comment-text"><br>            {props.text}<br>              </div><br>              <div classname="Comment-date"><br>            {formatDate(props.date)}<br>          </div><br>        </div><br>      );<br>    }</p>
 <p>接下来我们分割一个userInfo</p>
 <p>组件渲染Avatar接下来是user‘s name<br>    function UserInfo(props) {<br>      return (<br>        <div classname="UserInfo"><br>          <avatar user="{props.user}"><br>          <div classname="UserInfo-name"><br>        {props.user.name}<br>          </div><br>        </avatar></div><br>      );<br>    }</p>
 <p>这让我们简单的组件更进一步<br>    function Comment(props) {<br>      return (<br>        <div classname="Comment"><br>          <userinfo user="{props.author}"><br>          <div classname="Comment-text"><br>        {props.text}<br>          </div><br>          <div classname="Comment-date"><br>        {formatDate(props.date)}<br>          </div><br>        </userinfo></div><br>      );<br>    }</p>
@@ -414,7 +419,7 @@ ReactDOM.render(
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2018-04-03 
+	2018-04-04 
 	</div>
 	
 
