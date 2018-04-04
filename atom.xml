@@ -5,9 +5,9 @@
   <subtitle>fuck the life</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.ylioo.com/"/>
+  <link href="http://www.github.com/suguanYang/"/>
   <updated>2018-04-04T08:58:32.221Z</updated>
-  <id>http://www.ylioo.com/</id>
+  <id>http://www.github.com/suguanYang/</id>
   
   <author>
     <name>donnie</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>React chinese</title>
-    <link href="http://www.ylioo.com/2018/04/04/react/React%20chinese/"/>
-    <id>http://www.ylioo.com/2018/04/04/react/React chinese/</id>
+    <link href="http://www.github.com/suguanYang/2018/04/04/react/React%20chinese/"/>
+    <id>http://www.github.com/suguanYang/2018/04/04/react/React chinese/</id>
     <published>2018-04-03T16:00:00.000Z</published>
     <updated>2018-04-04T08:58:32.221Z</updated>
     
@@ -37,10 +37,10 @@
     
     </summary>
     
-      <category term="React" scheme="http://www.ylioo.com/categories/React/"/>
+      <category term="React" scheme="http://www.github.com/suguanYang/categories/React/"/>
     
     
-      <category term="React" scheme="http://www.ylioo.com/tags/React/"/>
+      <category term="React" scheme="http://www.github.com/suguanYang/tags/React/"/>
     
   </entry>
   
