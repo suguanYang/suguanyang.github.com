@@ -140,7 +140,7 @@
 <!-- /TOC -->
 <h2 id="0-1-寄存器："><a href="#0-1-寄存器：" class="headerlink" title="0.1. 寄存器："></a>0.1. 寄存器：</h2><p>CPU本身只负责运算， 不负责存储数据。数据一般都存储在内存之中，cpu要用的时候就去内存中读写数据。但是，cpu的运行速度要远高于内存的读写，为了避免被拖慢，cpu一般都自带一级缓存和二级缓存。基本上，cpu缓存可以看作是读写速度较快的内存。</p>
 <p>但是，cpu缓存还是不够快，另外数据在缓存里面的地址是不固定的，cpu每次读写都要寻址也会拖慢速度。因此，除了缓存之外，cpu还自带了寄存器（register），用来存储最常用的数据。也就是说那些使用最频繁的数据（比如循环变量），都会放在寄存器里面，cpu优先读写寄存器，再由寄存器跟内存交换数据。</p>
-<p><img src="img/jicun.PNG" alt="寄存器"></p>
+<p><img src="/img/jicun.PNG" alt="寄存器"></p>
 <p>寄存器不依靠地址区分数据，而依靠名称。每一个寄存器都有自己的名称，我们告诉cpu去具体的那一个寄存器去拿数据，这样的速度是最快的。有人比喻寄存器是cpu的零级缓存。</p>
 <h2 id="0-2-寄存器的种类"><a href="#0-2-寄存器的种类" class="headerlink" title="0.2. 寄存器的种类"></a>0.2. 寄存器的种类</h2><p>早期的x86 CPU 只有8个寄存器，而且每个都有不同的用途。现在的寄存器已经有100多个了，都变成通用寄存器，不指定用途了，但是早期寄存器的名称都被保留了下来。</p>
 <ul>
@@ -156,12 +156,12 @@
 <p>上面这八个寄存器当中，前面七个都是通用的。esp寄存器有特定用途，保存当前stack的地址。</p>
 <p>我们常看到32位CPU.64位CPU这样的名称，其实指的就是寄存器大小。32位的CPU的寄存器大小就是四个字节。</p>
 <h2 id="0-3-内存模型-Heap"><a href="#0-3-内存模型-Heap" class="headerlink" title="0.3. 内存模型: Heap"></a>0.3. 内存模型: Heap</h2><p>寄存器只能存放很少量的数据，大多数的时候，CPU要指挥寄存器，直接跟内存交换数据。所以除了寄存器还必须了解<br>内存怎么储存数据。<br>程序运行的时候，操作系统会给它分配一段内存，用来存储程序和运行时产生的数据。这段内存有起始地址和结束地址，比如从0x1000到0x8000,起始地址是较小的那个地址。</p>
-<p><img src="img/memo.PNG" alt="memory"></p>
+<p><img src="/img/memo.PNG" alt="memory"></p>
 <p>程序运行过程中，对于动态的内存请求(比如新建对象，或者使用malloc命令)，系统与就会从预先分配好的那段内存之中划出一部分给用户，具体规则是从起始地址开始划分(实际上，起始地址会有一段静态数据，这里先忽略)。举例来说，用户要求得到10个字节内存，那么从起始地址0x1000开始给他分配。一直分配到地址(0x100A),如果再要求得到22个字节，那么就分配到0x1020</p>
-<p><img src="img/memo_1.png" alt="memory"></p>
+<p><img src="/img/memo_1.png" alt="memory"></p>
 <p>这种因为用户主动请求而划分出来的内存区域，叫做heap(堆)。它由起始地址开始，从地位地址项高位地址增长。Heap的一个重要的特点就是不会自动消失，必须手动释放，或者由垃圾回收机制来回收。</p>
 <h2 id="0-4-内存模型-Stack"><a href="#0-4-内存模型-Stack" class="headerlink" title="0.4. 内存模型:Stack"></a>0.4. 内存模型:Stack</h2><p>除了Heap外，其他的内存占用叫做Stack(栈)。简单说，stack是由函数运行而临时占用的内存区域。</p>
-<p><img src="img/stack.png" alt="stack"></p>
+<p><img src="/img/stack.png" alt="stack"></p>
 <p>请看下面的例子。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int main ()</span><br><span class="line">&#123;</span><br><span class="line">	int a = 2;</span><br><span class="line">	int b = 3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>上面代码中，系统开始执行main函数时，会为它在内存里面创建一个帧(frame)，所有main的内部变量(a,b)都保存在这个帧里面。main函数执行结束后，该帧就会被回收，释放所有的内部变量，不再占用空间。</p>
