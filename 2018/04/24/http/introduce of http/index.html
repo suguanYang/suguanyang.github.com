@@ -6,7 +6,7 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>归档：2018/4 | Front-Ends</title>
+  <title>http introduce | Front-Ends</title>
   <meta name="author" content="donnie">
   
   <meta name="description" content="your life is only once, fuck it">
@@ -14,7 +14,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="http introduce"/>
   <meta property="og:site_name" content="Front-Ends"/>
 
   
@@ -92,186 +92,134 @@
   	<div class="content">
     	 
 
-<!-- title -->
-<div class="page-header">
-  <h1 class="archive-title"><i class="fa fa-archive"></i> 2018/4</h1>
-</div>
 
-<div class="row page">
-  <!-- cols -->
-  
-  <div class="col-md-9">
 	
-
-	  <div id="top_search"></div>
-
-	  <div class="archive">
-		
-		
-		
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2018">2018<b class="caret"></b></h4>
-			<ul id="2018" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2018-04-24 </span> &raquo;
-		
-		   <span class="title"><a href="/2018/04/24/stylesheets/margin重叠/" >margin重叠</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2018-04-24 </span> &raquo;
-		
-		   <span class="title"><a href="/2018/04/24/stylesheets/flex/" >flex</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2018-04-24 </span> &raquo;
-		
-		   <span class="title"><a href="/2018/04/24/http/introduce of http/" >http introduce</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2018-04-23 </span> &raquo;
-		
-		   <span class="title"><a href="/2018/04/23/yarn/feature/" >the feature of yarn</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2018-04-08 </span> &raquo;
-		
-		   <span class="title"><a href="/2018/04/08/assembly/asm/" >汇编基础</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2018-04-04 </span> &raquo;
-		
-		   <span class="title"><a href="/2018/04/04/react/React chinese/" >React chinese</a></span>
-		
-		</li>			
-		
-		</ul>
+		<div class="page-header">
+			<h1> http introduce</h1>
 		</div>
-
-</div> <!-- col-md-9/col-md-12 -->
-
-
-<div class="col-md-3">
-	<div id="sidebar">
 	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
-  </div>
 
 
-		
-			
-	<div class="widget">
-		<h4>分类</h4>
-		<ul class="tag_box inline list-unstyled">
-		
-			<li><a href="/categories/React/">React<span>1</span></a></li>
-		
-			<li><a href="/categories/assembly/">assembly<span>1</span></a></li>
-		
-			<li><a href="/categories/http/">http<span>1</span></a></li>
-		
-			<li><a href="/categories/stylesheets/">stylesheets<span>2</span></a></li>
-		
-			<li><a href="/categories/yarn/">yarn<span>1</span></a></li>
-		
-		</ul>
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h2 id="http"><a href="#http" class="headerlink" title="http:"></a>http:</h2><pre><code>HyperText Transfer Protocol
+</code></pre><ul>
+<li><p>the http 是应用层上的协议，应用层可以和基于web的应用进行交流与数据的交换</p>
+</li>
+<li><p>the http 是web的信使</p>
+</li>
+<li><p>http是基于TCP/IP协议的</p>
+</li>
+<li><p>http可以传送内容，像图片，文字，语音，视频等</p>
+</li>
+</ul>
+<h2 id="http的几个重要特征："><a href="#http的几个重要特征：" class="headerlink" title="http的几个重要特征："></a>http的几个重要特征：</h2><ul>
+<li>http is <strong>connectionless</strong>: 在一次请求结束以后，客户端将会与服务器断开链接，之后，当响应已经准备完毕，服务端将会再次重新启动链接并且传输数据</li>
+<li>http可以发送任意排序的数据，只要服务端有能力读懂。</li>
+<li>the http is <strong>stateless</strong>: 客户端和服务端都知道对方是处于本次请求期间，如果请求被关闭，而且双方想再次链接，它们需要重新提供信息给对方，这个链接将会第一个被处理</li>
+</ul>
+<h2 id="why-http"><a href="#why-http" class="headerlink" title="why http?"></a>why http?</h2><ul>
+<li>http被设计主要用来获取html，将它们发送到客户端</li>
+<li>http被设计的很精致</li>
+<li>http将会不断的进化而且更多的特性将会被添加</li>
+<li>http是最方便达到快速，可靠的在web上移动数据的方式</li>
+</ul>
+	  
 	</div>
 
-		
-			
-	<div class="widget">
-		<h4>标签云</h4>
-		<ul class="tag_box inline list-unstyled">		
-		
-			<li><a href="/tags/yarn/">yarn<span>1</span></a></li>
-		
-			<li><a href="/tags/React/">React<span>1</span></a></li>
-		
-			<li><a href="/tags/assembly/">assembly<span>1</span></a></li>
-		
-			<li><a href="/tags/http/">http<span>1</span></a></li>
-		
-			<li><a href="/tags/flex/">flex<span>1</span></a></li>
-		
-			<li><a href="/tags/margin/">margin<span>1</span></a></li>
-		
-		 
-		</ul>
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2018/04/24/stylesheets/flex/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> 上一页</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2018/04/23/yarn/feature/" type="button" class="btn btn-default ">下一页<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
 	</div>
-
-
-		
-			
-<div class="widget">
-  <h4>最新文章</h4>
-  <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/2018/04/24/stylesheets/margin重叠/" ><i class="fa fa-file-o"></i>margin重叠</a>
-      </li>
-    
-      <li>
-        <a href="/2018/04/24/stylesheets/flex/" ><i class="fa fa-file-o"></i>flex</a>
-      </li>
-    
-      <li>
-        <a href="/2018/04/24/http/introduce of http/" ><i class="fa fa-file-o"></i>http introduce</a>
-      </li>
-    
-      <li>
-        <a href="/2018/04/23/yarn/feature/" ><i class="fa fa-file-o"></i>the feature of yarn</a>
-      </li>
-    
-      <li>
-        <a href="/2018/04/08/assembly/asm/" ><i class="fa fa-file-o"></i>汇编基础</a>
-      </li>
-    
-  </ul>
-</div>
-
-		
-			
-<div class="widget">
-	<h4>链接</h4>
-	<ul class="blogroll list-unstyled">
 	
-		<li><i class="fa fa-github"></i><a href="http://www.github.com/suguanYang" title="My Github account." target="_blank"]);">My Github</a></li>
+	<!-- comment -->
 	
-	</ul>
-</div>
+<section id="comment">
+    <h2 class="title">留言</h2>
+
+    
+</section>
 
 
+	</div> <!-- col-md-9/col-md-12 -->
 		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
 
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2018-04-24 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/http/">http<span>1</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/http/">http<span>1</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
 
 
 

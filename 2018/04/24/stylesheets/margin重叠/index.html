@@ -6,7 +6,7 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>the feature of yarn | Front-Ends</title>
+  <title>margin重叠 | Front-Ends</title>
   <meta name="author" content="donnie">
   
   <meta name="description" content="your life is only once, fuck it">
@@ -14,7 +14,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="the feature of yarn"/>
+  <meta property="og:title" content="margin重叠"/>
   <meta property="og:site_name" content="Front-Ends"/>
 
   
@@ -95,7 +95,7 @@
 
 	
 		<div class="page-header">
-			<h1> the feature of yarn</h1>
+			<h1> margin重叠</h1>
 		</div>
 	
 
@@ -112,13 +112,45 @@
 	<div class="mypage">		
 	  		
 
-	  <p>yarn 是由facebook的工程师开发的包管理器</p>
-<p>快速，稳定，安全依赖管理 是yarn给用户提供的保证，</p>
-<h2 id="离线缓存"><a href="#离线缓存" class="headerlink" title="离线缓存"></a>离线缓存</h2><p>当你使用yarn安装一个包时(<code>yarn add packageName</code>), 它会将包放置到硬盘中，下一次安装这个包时，yarn不会去请求网络而是直接从注册处那儿取得压缩包，<br>你的缓存模块会被放置在<code>~/.yarn-cache</code>，将会以注册处名称为前缀，模块版本作为后缀。</p>
-<h2 id="确定性安装-Deterministic-Installs"><a href="#确定性安装-Deterministic-Installs" class="headerlink" title="确定性安装(Deterministic Installs)"></a>确定性安装(Deterministic Installs)</h2><p>Yarn 使用<code>lockfiles</code>(<em>yarn.lock</em>)和確定性安裝算法，我們可以對“在我的電腦上好好的”這種bug說再見了。</p>
-<p>它对所有的依赖项包含了額外的版本號。</p>
-<h2 id="许可证检查-License-checks"><a href="#许可证检查-License-checks" class="headerlink" title="许可证检查(License checks)"></a>许可证检查(License checks)</h2><p>Yarn 带有一个方便的许可证检查器，当你必须检查所有依赖项的证书时是非常有用的</p>
-<h2 id="潜在问题"><a href="#潜在问题" class="headerlink" title="潜在问题"></a>潜在问题</h2><p>Yarn 还处在早期阶段， 所以当你在使用时发生一些错误是不必惊讶的。</p>
+	  <h2 id="margin重叠"><a href="#margin重叠" class="headerlink" title="margin重叠"></a>margin重叠</h2><blockquote>
+<p>两个或多个块级盒子的垂直相邻边界会重合。结果的边界宽度是相邻边界宽度中最大的值。如果出现负边界，则在最大的正边界中减去绝对值最大的负边界。如果没有正边界，则从零中减去绝对值最大的负边界。注意：相邻的盒子可能并非是由父子关系或同胞关系的元素生成。 </p>
+</blockquote>
+<h2 id="边界的重叠例外情况："><a href="#边界的重叠例外情况：" class="headerlink" title="边界的重叠例外情况："></a>边界的重叠例外情况：</h2><ul>
+<li>1、水平边距永远不会重合。 </li>
+<li>2、在规范文档中，2个或以上的块级盒模型相邻的垂直margin会重叠。最终的margin值计算方法如下：      <ul>
+<li>a、全部都为正值，取最大者； </li>
+<li>b、不全是正值，则都取绝对值，然后用正值减去最大值； </li>
+<li>c、没有正值，则都取绝对值，然后用0减去最大值。<br><strong>注意</strong>：<code>相邻的盒模型可能由DOM元素动态产生并没有相邻或继承关系。</code> </li>
+</ul>
+</li>
+<li>3、相邻的盒模型中，如果其中的一个是浮动的（float），垂直margin不会重叠，并且浮动的盒模型和它的子元素之间也是这样。 </li>
+<li>4、设置了overflow属性的元素和它的子元素之间的margin不被重叠（overflow取值为visible除外）。 </li>
+<li>5、设置了绝对定位（position:absolute）的盒模型，垂直margin不会被重叠，并且和他们的子元素之间也是一样。 </li>
+<li>6、设置了display:inline-block的元素，垂直margin不会重叠，甚至和他们的子元素之间也是一样。 </li>
+<li>7、如果一个盒模型的上下margin相邻，这时它的margin可能重叠覆盖（collapse through）它。在这种情况下，元素的位置（position）取决于它的相邻元素的margin是否重叠。 <ul>
+<li>a、如果元素的margin和它的父元素的margin-top重叠在一起，盒模型border-top的边界定义和它的父元素相同。 </li>
+<li>b、另外，任意元素的父元素不参与margin的重叠，或者说只有父元素的margin-bottom是参与计算的。如果元素的border-top非零，那么元素的border-top边界位置和原来一样。 一个应用了清除操作的元素的margin-top绝不会和它的块级父元素的margin-bottom重叠。<br><strong>注意</strong>: <code>那些已经被重叠覆盖的元素的位置对其他已经重叠的元素的位置没有任何影响；只有在对这些元素的子元素定位时，border-top边界位置才是必需的。</code> </li>
+</ul>
+</li>
+<li>8、根元素的垂直margin不会被重叠。</li>
+</ul>
+<h2 id="外边距重叠示例"><a href="#外边距重叠示例" class="headerlink" title="外边距重叠示例"></a>外边距重叠示例</h2><blockquote>
+<p>外边距重叠是指两个垂直相邻的块级元素，当上下两个边距相遇时，起外边距会产生重叠现象，且重叠后的外边距，等于其中较大者。 </p>
+</blockquote>
+<p>另一个重叠现象是当一个元素包含在另一个元素之中时，子元素与父元素之间也会产生重叠现象，重叠后的外边距，等于其中最大者。同理，如果一个无内容的空元素，其自身上下边距也会产生重叠。 </p>
+<h2 id="外边距重叠的意义"><a href="#外边距重叠的意义" class="headerlink" title="外边距重叠的意义"></a>外边距重叠的意义</h2><blockquote>
+<p>外边距的重叠只产生在普通流文档的上下外边距之间，这个看起来有点奇怪的规则，其实有其现实意义。设想，当我们上下排列一系列规则的块级元素（如段落P）时，那么块元素之间因为外边距重叠的存在，段落之间就不会产生双倍的距离。</p>
+</blockquote>
+<h2 id="防止外边距重叠解决方案："><a href="#防止外边距重叠解决方案：" class="headerlink" title="防止外边距重叠解决方案："></a>防止外边距重叠解决方案：</h2><p>虽然外边距的重叠有其一定的意义，但有时候我们在设计上却不想让元素之间产生重叠，那么可以有如下几个建议可供参考：</p>
+<ul>
+<li>外层元素padding代替</li>
+<li>内层元素透明边框 border:1px solid transparent;</li>
+<li>内层元素绝对定位 postion:absolute:</li>
+<li>外层元素 overflow:hidden;</li>
+<li>内层元素 加float:left;或display:inline-block;</li>
+<li>内层元素padding:1px;</li>
+</ul>
+<p>以上建议可根据实际情况来采取。</p>
 	  
 	</div>
 
@@ -128,13 +160,12 @@
 
     
     
-    <a href="/2018/04/24/http/introduce of http/" type="button" class="btn btn-default"><i
-                class="fa fa-arrow-circle-o-left"></i> 上一页</a>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>上一页</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2018/04/08/assembly/asm/" type="button" class="btn btn-default ">下一页<i
+    <a href="/2018/04/24/stylesheets/flex/" type="button" class="btn btn-default ">下一页<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 
@@ -163,7 +194,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2018-04-23 
+	2018-04-24 
 	</div>
 	
 
@@ -174,7 +205,7 @@
     <ul id="categorys" class="tag_box list-unstyled collapse in">
           
   <li>
-    <li><a href="/categories/yarn/">yarn<span>1</span></a></li>
+    <li><a href="/categories/stylesheets/">stylesheets<span>2</span></a></li>
   </li>
 
     </ul>
@@ -187,7 +218,7 @@
 	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
     <ul id="tags" class="tag_box list-unstyled collapse in">	  
 	    
-  <li><a href="/tags/yarn/">yarn<span>1</span></a></li>
+  <li><a href="/tags/margin/">margin<span>1</span></a></li>
     </ul>
 	</div>
 		
